@@ -266,10 +266,12 @@ def get_issue_comments(issue_number):
 def get_bot_comment_id(issue_number):
     """获取机器人评论的 ID"""
     comments = get_issue_comments(issue_number)
-    current_user = get_current_user()
+    
+    # GitHub Actions 中的机器人用户名是 'github-actions[bot]'
+    bot_username = 'github-actions[bot]'
     
     for comment in comments:
-        if comment.get('user', {}).get('login') == current_user:
+        if comment.get('user', {}).get('login') == bot_username:
             return comment['id']
     
     return None
@@ -304,18 +306,6 @@ def update_comment_on_issue(issue_number, comment_body):
         except Exception as e:
             print(f"创建评论失败: {str(e)}")
             return False
-
-def get_current_user():
-    """获取当前认证用户"""
-    url = 'https://api.github.com/user'
-    
-    try:
-        response = requests.get(url, headers=HEADERS)
-        response.raise_for_status()
-        return response.json().get('login', '')
-    except Exception as e:
-        print(f"获取用户信息失败: {str(e)}")
-        return ''
 
 def update_issue_labels(issue_number, new_labels):
     """更新 Issue 标签 - 替换状态标签，保留其他标签"""
