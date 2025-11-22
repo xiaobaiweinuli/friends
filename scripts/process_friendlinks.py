@@ -28,8 +28,8 @@ HEADERS = {
     'Accept': 'application/vnd.github.v3+json'
 }
 
-# 定义状态标签（这些将被过滤掉，但不包括"友链申请"）
-STATUS_LABELS = ['在线', '离线', '访问受限', '已通过', '待处理']
+# 定义状态标签（这些将被过滤掉，包括友链申请）
+STATUS_LABELS = ['在线', '离线', '访问受限', '已通过', '待处理', '友链申请']
 
 def get_beijing_time():
     """获取北京时间 (UTC+8)"""
@@ -409,7 +409,7 @@ def filter_custom_labels(labels):
     for label in labels:
         label_name = label['name']
         
-        # 过滤掉状态标签
+        # 过滤掉状态标签和友链申请标签
         if label_name in STATUS_LABELS:
             continue
             
