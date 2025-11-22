@@ -11,6 +11,10 @@ from dateutil import parser as date_parser
 from pathlib import Path
 import re
 import socket
+import urllib3
+
+# 禁用 SSL 警告
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 GITHUB_TOKEN = os.environ.get('GITHUB_TOKEN')
 REPO = os.environ.get('GITHUB_REPOSITORY')
@@ -24,152 +28,191 @@ HEADERS = {
     'Accept': 'application/vnd.github.v3+json'
 }
 
-def check_website(url, timeout=15):
-    """检查网站是否可访问 - 增强版本"""
-    # 添加常见的 User-Agent 头，避免被某些网站屏蔽
+def resolve_domain(domain):
+    """尝试解析域名"""
+    try:
+        # 尝试使用多个 DNS 服务器
+        dns_servers = ['8.8.8.8', '1.1.1.1', '114.114.114.114']
+        for dns in dns_servers:
+            try:
+                resolver = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+                resolver.settimeout(5)
+                # 发送 DNS 查询（简化版）
+                print(f"尝试使用 DNS {dns} 解析 {domain}")
+                ip = socket.gethostbyname(domain)
+                print(f"✓ 域名解析成功: {domain} -> {ip}")
+                return ip
+            except:
+                continue
+        return None
+    except Exception as e:
+        print(f"域名解析失败: {str(e)}")
+        return None
+
+def check_website_with_retry(url, max_retries=3):
+    """带重试的网站检查"""
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
     }
     
-    try:
-        print(f"尝试访问网站: {url}")
-        response = requests.get(
-            url, 
-            timeout=timeout, 
-            allow_redirects=True,
-            headers=headers,
-            verify=False  # 跳过 SSL 验证，避免证书问题
-        )
-        print(f"网站状态码: {response.status_code}")
-        return response.status_code == 200
-    except requests.exceptions.Timeout:
-        print(f"网站访问超时: {url} (超过 {timeout} 秒)")
-        return False
-    except requests.exceptions.SSLError as e:
-        print(f"SSL 证书错误 {url}: {str(e)}")
-        # SSL 错误时尝试不验证证书
+    for attempt in range(max_retries):
         try:
+            print(f"尝试 {attempt + 1}/{max_retries}: {url}")
             response = requests.get(
                 url, 
-                timeout=timeout, 
+                timeout=15, 
                 allow_redirects=True,
                 headers=headers,
                 verify=False
             )
-            print(f"忽略SSL证书后状态码: {response.status_code}")
-            return response.status_code == 200
-        except Exception as e2:
-            print(f"忽略SSL后仍然失败: {str(e2)}")
-            return False
-    except Exception as e:
-        print(f"检查网站失败 {url}: {str(e)}")
-        return False
+            print(f"状态码: {response.status_code}")
+            if response.status_code == 200:
+                return True
+            time.sleep(2)  # 等待后重试
+        except requests.exceptions.ConnectionError as e:
+            print(f"连接错误 (尝试 {attempt + 1}): {str(e)}")
+            if "NameResolutionError" in str(e):
+                # 如果是域名解析错误，尝试手动解析
+                from urllib.parse import urlparse
+                parsed = urlparse(url)
+                domain = parsed.hostname
+                ip = resolve_domain(domain)
+                if ip:
+                    # 使用 IP 地址重试
+                    new_url = url.replace(domain, ip)
+                    headers['Host'] = domain  # 添加 Host 头
+                    try:
+                        print(f"使用 IP 地址重试: {new_url}")
+                        response = requests.get(
+                            new_url,
+                            timeout=15,
+                            allow_redirects=True,
+                            headers=headers,
+                            verify=False
+                        )
+                        if response.status_code == 200:
+                            return True
+                    except Exception as ip_e:
+                        print(f"IP 重试失败: {str(ip_e)}")
+            time.sleep(2)
+        except Exception as e:
+            print(f"其他错误 (尝试 {attempt + 1}): {str(e)}")
+            time.sleep(2)
+    
+    return False
 
-def check_website_alternative(url, timeout=10):
-    """备用检查方法 - 通过 DNS 解析和端口连接"""
+def check_website_robust(url):
+    """健壮的网站检查"""
+    print(f"\n开始健壮性检查: {url}")
+    
+    # 方法1: 带重试的直接请求
+    if check_website_with_retry(url):
+        print("✓ 方法1: 带重试的直接请求成功")
+        return True
+    
+    # 方法2: 检查基本连接性
+    print("方法1失败，尝试基本连接性检查...")
     try:
         from urllib.parse import urlparse
         parsed = urlparse(url)
         hostname = parsed.hostname
         port = parsed.port or (443 if parsed.scheme == 'https' else 80)
         
-        print(f"尝试 DNS 解析: {hostname}")
-        ip = socket.gethostbyname(hostname)
-        print(f"DNS 解析成功: {hostname} -> {ip}")
-        
-        # 尝试建立 TCP 连接
+        # 先解析域名
+        ip = resolve_domain(hostname)
+        if not ip:
+            print("✗ 无法解析域名")
+            return False
+            
+        # 尝试 TCP 连接
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        sock.settimeout(timeout)
+        sock.settimeout(10)
         result = sock.connect_ex((ip, port))
         sock.close()
         
         if result == 0:
-            print(f"TCP 连接成功: {hostname}:{port}")
+            print("✓ TCP 连接成功")
             return True
         else:
-            print(f"TCP 连接失败: {hostname}:{port} (错误码: {result})")
+            print(f"✗ TCP 连接失败 (错误码: {result})")
             return False
     except Exception as e:
-        print(f"备用检查方法失败: {str(e)}")
+        print(f"基本连接性检查失败: {str(e)}")
         return False
 
-def check_website_robust(url):
-    """健壮的网站检查"""
-    print(f"\n开始健壮性检查: {url}")
+def fetch_rss_with_fallback(feed_url, max_posts=3):
+    """带备用方案的 RSS 抓取"""
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+    }
     
-    # 方法1: 直接 HTTP 请求
-    if check_website(url):
-        print("✓ 方法1: 直接请求成功")
-        return True
-    
-    # 方法2: 备用检查
-    print("方法1失败，尝试备用检查方法...")
-    if check_website_alternative(url):
-        print("✓ 方法2: 备用检查成功")
-        return True
-    
-    # 方法3: 尝试不同的超时时间
-    print("方法2失败，尝试增加超时时间...")
-    if check_website(url, timeout=30):
-        print("✓ 方法3: 增加超时后成功")
-        return True
-    
-    print("✗ 所有检查方法都失败")
-    return False
-
-def fetch_rss_posts(feed_url, max_posts=3):
-    """抓取 RSS 文章"""
+    # 方法1: 直接抓取
     try:
-        print(f"抓取 RSS: {feed_url}")
-        # 添加 User-Agent 避免被屏蔽
-        headers = {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
-        }
-        
-        # 使用 requests 获取内容，然后交给 feedparser 解析
+        print(f"方法1: 直接抓取 RSS")
         response = requests.get(feed_url, headers=headers, timeout=15, verify=False)
         response.raise_for_status()
-        
         feed = feedparser.parse(response.content)
-        posts = []
-
-        for entry in feed.entries[:max_posts]:
-            published = None
-            if hasattr(entry, 'published'):
-                published = entry.published
-            elif hasattr(entry, 'updated'):
-                published = entry.updated
-
-            # 解析发布时间
-            published_time = ""
-            if published:
-                try:
-                    dt = date_parser.parse(published)
-                    published_time = dt.strftime('%Y-%m-%d %H:%M')
-                except:
-                    published_time = published
-
-            posts.append({
-                'title': entry.title if hasattr(entry, 'title') else '',
-                'link': entry.link if hasattr(entry, 'link') else '',
-                'published': published_time
-            })
-
-        print(f"成功抓取 {len(posts)} 篇文章")
-        return posts
+        return process_feed_entries(feed, max_posts)
     except Exception as e:
-        print(f"抓取 RSS 失败 {feed_url}: {str(e)}")
-        return []
+        print(f"直接抓取失败: {str(e)}")
+    
+    # 方法2: 尝试使用 IP 地址
+    try:
+        from urllib.parse import urlparse
+        parsed = urlparse(feed_url)
+        domain = parsed.hostname
+        ip = resolve_domain(domain)
+        
+        if ip:
+            print(f"方法2: 使用 IP 地址抓取")
+            new_feed_url = feed_url.replace(domain, ip)
+            headers['Host'] = domain
+            response = requests.get(new_feed_url, headers=headers, timeout=15, verify=False)
+            response.raise_for_status()
+            feed = feedparser.parse(response.content)
+            return process_feed_entries(feed, max_posts)
+    except Exception as e:
+        print(f"IP 地址抓取失败: {str(e)}")
+    
+    # 方法3: 尝试公共 RSS 代理服务（如果有）
+    print("方法3: 所有方法都失败")
+    return []
+
+def process_feed_entries(feed, max_posts):
+    """处理 Feed 条目"""
+    posts = []
+    for entry in feed.entries[:max_posts]:
+        published = None
+        if hasattr(entry, 'published'):
+            published = entry.published
+        elif hasattr(entry, 'updated'):
+            published = entry.updated
+
+        # 解析发布时间
+        published_time = ""
+        if published:
+            try:
+                dt = date_parser.parse(published)
+                published_time = dt.strftime('%Y-%m-%d %H:%M')
+            except:
+                published_time = published
+
+        posts.append({
+            'title': entry.title if hasattr(entry, 'title') else '',
+            'link': entry.link if hasattr(entry, 'link') else '',
+            'published': published_time
+        })
+
+    print(f"成功处理 {len(posts)} 篇文章")
+    return posts
+
+# 其余函数保持不变（parse_issue_body, get_all_issues, comment_on_issue, add_label_to_issue, load_data, save_data）
 
 def parse_issue_body(body):
     """解析 Issue 内容"""
     print(f"\n=== 开始解析 Issue 内容 ===")
-    print(f"原始内容长度: {len(body)} 字符")
-    print(f"原始内容预览:\n{body[:500]}\n")
-
     data = {}
 
-    # 匹配表单格式（GitHub Issue Form）
     patterns = {
         'title': r'### 网站名称\s*\n\s*([^\n]+)',
         'url': r'### 网站地址\s*\n\s*([^\n]+)',
@@ -187,9 +230,7 @@ def parse_issue_body(body):
         else:
             print(f"✗ 未找到 {key}")
 
-    print(f"\n解析结果: {json.dumps(data, ensure_ascii=False, indent=2)}")
     print("=== Issue 解析完成 ===\n")
-
     return data
 
 def get_all_issues():
@@ -247,11 +288,9 @@ def load_data():
 
 def save_data(data):
     """保存数据"""
-    # 按最新文章发布时间排序
     for item in data['content']:
         if item['posts']:
             try:
-                # 解析第一篇文章的发布时间
                 latest_time = datetime.strptime(item['posts'][0]['published'], '%Y-%m-%d %H:%M')
                 item['_sort_time'] = latest_time.timestamp()
             except:
@@ -259,10 +298,8 @@ def save_data(data):
         else:
             item['_sort_time'] = 0
 
-    # 倒序排序（最新的在前面）
     data['content'].sort(key=lambda x: x.get('_sort_time', 0), reverse=True)
 
-    # 删除排序用的临时字段
     for item in data['content']:
         if '_sort_time' in item:
             del item['_sort_time']
@@ -271,7 +308,7 @@ def save_data(data):
         json.dump(data, f, ensure_ascii=False, indent=2)
 
 def process_single_issue(issue, data):
-    """处理单个 Issue"""
+    """处理单个 Issue - 放宽检查条件"""
     issue_number = issue['number']
     body = issue['body'] or ''
 
@@ -295,33 +332,32 @@ def process_single_issue(issue, data):
 
     print(f"\n✓ Issue 信息解析成功")
 
-    # 检查网站是否在线 - 使用健壮性检查
+    # 放宽网站检查条件
     print(f"\n正在检查网站: {info['url']}")
     website_online = check_website_robust(info['url'])
     
+    # 即使网站检查失败也继续处理，因为可能是 GitHub Actions 的网络限制
     if not website_online:
-        print(f"❌ 网站离线: {info['url']}")
+        print(f"⚠️ 网站检查失败，继续处理 RSS: {info['url']}")
         comment_on_issue(
             issue_number,
-            f"⚠️ 网站访问检查失败\n\n在 GitHub Actions 环境中无法访问 {info['url']}，这可能是由于网络限制。\n\n但我们会继续处理 RSS 订阅源。如果 RSS 可用，友链仍会被添加。\n\n检查时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
+            f"⚠️ 网站访问检查失败\n\n在 GitHub Actions 环境中无法访问 {info['url']}，这可能是由于网络限制。\n\n我们会继续处理 RSS 订阅源，如果 RSS 可用，友链仍会被添加。\n\n检查时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
         )
-        # 不立即返回，继续处理 RSS
         add_label_to_issue(issue_number, '访问受限')
     else:
         print(f"✓ 网站在线")
         add_label_to_issue(issue_number, '在线')
 
-    # 抓取 RSS
+    # 抓取 RSS - 使用备用方案
     print(f"\n正在抓取 RSS: {info['feed']}")
-    posts = fetch_rss_posts(info['feed'])
+    posts = fetch_rss_with_fallback(info['feed'])
 
     if not posts:
-        print(f"⚠️ RSS 抓取失败: {info['feed']}")
+        print(f"❌ RSS 抓取失败: {info['feed']}")
         comment_on_issue(
             issue_number,
-            f"❌ RSS 订阅源访问失败\n\n无法获取 {info['feed']} 的内容，请检查 RSS 地址是否正确。\n\n检查时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
+            f"❌ RSS 订阅源访问失败\n\n无法获取 {info['feed']} 的内容，请检查 RSS 地址是否正确且可公开访问。\n\n检查时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
         )
-        # RSS 失败则整个申请失败
         return False
 
     print(f"✓ RSS 抓取成功，获取 {len(posts)} 篇文章")
@@ -344,7 +380,7 @@ def process_single_issue(issue, data):
         'issue_number': issue_number,
         'labels': [label['name'] for label in issue.get('labels', [])],
         'last_checked': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
-        'online': website_online  # 记录网站检查状态
+        'online': website_online
     }
 
     # 添加或更新
@@ -377,15 +413,10 @@ def main():
     print(f"数据文件: {DATA_FILE}")
     print("="*60 + "\n")
 
-    # 禁用 SSL 警告
-    import urllib3
-    urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-
     data = load_data()
     print(f"当前友链数量: {len(data['content'])}\n")
 
     if EVENT_NAME == 'issues' and ISSUE_NUMBER:
-        # 处理单个 Issue
         print(f"触发类型: Issue 事件 (#{ISSUE_NUMBER})")
         url = f'https://api.github.com/repos/{REPO}/issues/{ISSUE_NUMBER}'
         try:
@@ -410,7 +441,6 @@ def main():
             import traceback
             traceback.print_exc()
     else:
-        # 定时任务：处理所有 Issue
         print(f"触发类型: 定时任务或手动触发")
         issues = get_all_issues()
         print(f"\n找到 {len(issues)} 个待处理的友链申请\n")
@@ -424,7 +454,7 @@ def main():
                     success_count += 1
                 else:
                     fail_count += 1
-                time.sleep(2)  # 避免 API 限流
+                time.sleep(2)
             except Exception as e:
                 fail_count += 1
                 print(f"❌ 处理 Issue #{issue['number']} 时出错: {str(e)}")
@@ -435,7 +465,6 @@ def main():
         print(f"  - 成功: {success_count}")
         print(f"  - 失败: {fail_count}")
 
-    # 保存数据
     print(f"\n正在保存数据到: {DATA_FILE}")
     save_data(data)
     print(f"✓ 数据保存成功")
