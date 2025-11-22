@@ -6,7 +6,7 @@ import json
 import requests
 import feedparser
 import time
-from datetime import datetime
+from datetime import datetime, timedelta
 from dateutil import parser as date_parser
 from pathlib import Path
 import re
@@ -30,6 +30,18 @@ HEADERS = {
 
 # 定义状态标签
 STATUS_LABELS = ['在线', '离线', '访问受限', '已通过', '待处理']
+
+def get_beijing_time():
+    """获取北京时间 (UTC+8)"""
+    utc_now = datetime.utcnow()
+    beijing_time = utc_now + timedelta(hours=8)
+    return beijing_time
+
+def format_beijing_time(dt=None):
+    """格式化时间为北京时间字符串"""
+    if dt is None:
+        dt = get_beijing_time()
+    return dt.strftime('%Y-%m-%d %H:%M:%S')
 
 def resolve_domain(domain):
     """尝试解析域名"""
@@ -196,7 +208,9 @@ def process_feed_entries(feed, max_posts):
         if published:
             try:
                 dt = date_parser.parse(published)
-                published_time = dt.strftime('%Y-%m-%d %H:%M')
+                # 转换为北京时间
+                dt_beijing = dt + timedelta(hours=8)
+                published_time = dt_beijing.strftime('%Y-%m-%d %H:%M')
             except:
                 published_time = published
 
@@ -397,7 +411,7 @@ def process_single_issue(issue, data):
         print(f"❌ Issue #{issue_number} 信息不完整，缺少字段: {missing}")
         update_comment_on_issue(
             issue_number,
-            f"❌ 友链信息不完整\n\n缺少以下必需字段: {', '.join(missing)}\n\n请检查 Issue 内容格式是否正确。\n\n检查时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
+            f"❌ 友链信息不完整\n\n缺少以下必需字段: {', '.join(missing)}\n\n请检查 Issue 内容格式是否正确。\n\n检查时间: {format_beijing_time()}"
         )
         return False
 
@@ -415,7 +429,7 @@ def process_single_issue(issue, data):
         print(f"⚠️ 网站检查失败，继续处理 RSS: {info['url']}")
         update_comment_on_issue(
             issue_number,
-            f"⚠️ 网站访问检查失败\n\n在 GitHub Actions 环境中无法访问 {info['url']}，这可能是由于网络限制。\n\n我们会继续处理 RSS 订阅源，如果 RSS 可用，友链仍会被添加。\n\n检查时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
+            f"⚠️ 网站访问检查失败\n\n在 GitHub Actions 环境中无法访问 {info['url']}，这可能是由于网络限制。\n\n我们会继续处理 RSS 订阅源，如果 RSS 可用，友链仍会被添加。\n\n检查时间: {format_beijing_time()}"
         )
     else:
         print(f"✓ 网站在线")
@@ -428,7 +442,7 @@ def process_single_issue(issue, data):
         print(f"❌ RSS 抓取失败: {info['feed']}")
         update_comment_on_issue(
             issue_number,
-            f"❌ RSS 订阅源访问失败\n\n无法获取 {info['feed']} 的内容，请检查 RSS 地址是否正确且可公开访问。\n\n检查时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
+            f"❌ RSS 订阅源访问失败\n\n无法获取 {info['feed']} 的内容，请检查 RSS 地址是否正确且可公开访问。\n\n检查时间: {format_beijing_time()}"
         )
         # RSS 失败时也更新标签
         update_issue_labels(issue_number, [status_label])
@@ -453,7 +467,7 @@ def process_single_issue(issue, data):
         'posts': posts,
         'issue_number': issue_number,
         'labels': [label['name'] for label in issue.get('labels', [])],
-        'last_checked': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+        'last_checked': format_beijing_time(),
         'online': website_online
     }
 
@@ -463,7 +477,7 @@ def process_single_issue(issue, data):
         print(f"\n✓ 更新友链: {info['title']}")
         update_comment_on_issue(
             issue_number,
-            f"✅ 友链已更新\n\n- 网站名称: {info['title']}\n- 网站状态: {'在线' if website_online else '访问受限'}\n- 最新文章数: {len(posts)}\n\n更新时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
+            f"✅ 友链已更新\n\n- 网站名称: {info['title']}\n- 网站状态: {'在线' if website_online else '访问受限'}\n- 最新文章数: {len(posts)}\n\n更新时间: {format_beijing_time()}"
         )
         # 更新标签：状态标签 + 已通过
         update_issue_labels(issue_number, [status_label, '已通过'])
@@ -472,7 +486,7 @@ def process_single_issue(issue, data):
         print(f"\n✓ 新增友链: {info['title']}")
         update_comment_on_issue(
             issue_number,
-            f"✅ 友链申请已通过\n\n欢迎加入友链！\n\n- 网站名称: {info['title']}\n- 网站状态: {'在线' if website_online else '访问受限'}\n- 最新文章数: {len(posts)}\n\n审核时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
+            f"✅ 友链申请已通过\n\n欢迎加入友链！\n\n- 网站名称: {info['title']}\n- 网站状态: {'在线' if website_online else '访问受限'}\n- 最新文章数: {len(posts)}\n\n审核时间: {format_beijing_time()}"
         )
         # 新申请：状态标签 + 已通过
         update_issue_labels(issue_number, [status_label, '已通过'])
