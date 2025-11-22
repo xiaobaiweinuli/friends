@@ -26,9 +26,11 @@
       ],
       "issue_number": 6,
       "labels": [
-        "友链申请"
+        "友链申请",
+        "在线",
+        "已通过"
       ],
-      "last_checked": "2025-11-22 05:54:35",
+      "last_checked": "2025-11-22 05:58:30",
       "online": true
     }
   ]
