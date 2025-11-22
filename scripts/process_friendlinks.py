@@ -28,8 +28,8 @@ HEADERS = {
     'Accept': 'application/vnd.github.v3+json'
 }
 
-# 定义状态标签（这些将被过滤掉）
-STATUS_LABELS = ['在线', '离线', '访问受限', '已通过', '待处理', '友链申请']
+# 定义状态标签（这些将被过滤掉，但不包括"友链申请"）
+STATUS_LABELS = ['在线', '离线', '访问受限', '已通过', '待处理']
 
 def get_beijing_time():
     """获取北京时间 (UTC+8)"""
@@ -321,8 +321,8 @@ def update_comment_on_issue(issue_number, comment_body):
             print(f"创建评论失败: {str(e)}")
             return False
 
-def update_issue_labels(issue_number, new_labels):
-    """更新 Issue 标签 - 替换状态标签，保留其他标签"""
+def add_labels_to_issue(issue_number, labels_to_add):
+    """添加标签到 Issue，不删除原有标签"""
     # 获取当前标签
     current_issue = get_issue(issue_number)
     if not current_issue:
@@ -330,20 +330,19 @@ def update_issue_labels(issue_number, new_labels):
         
     current_labels = [label['name'] for label in current_issue.get('labels', [])]
     
-    # 过滤掉状态标签，保留其他标签（如自定义标签）
-    filtered_labels = [label for label in current_labels if label not in STATUS_LABELS]
-    
-    # 添加新的状态标签
-    final_labels = filtered_labels + new_labels
+    # 添加新标签（如果不存在）
+    for label in labels_to_add:
+        if label not in current_labels:
+            current_labels.append(label)
     
     # 更新标签
     url = f'https://api.github.com/repos/{REPO}/issues/{issue_number}/labels'
-    data = {'labels': final_labels}
+    data = {'labels': current_labels}
 
     try:
         response = requests.put(url, headers=HEADERS, json=data)
         response.raise_for_status()
-        print(f"✓ 更新标签: {final_labels}")
+        print(f"✓ 更新标签: {current_labels}")
         return True
     except Exception as e:
         print(f"更新标签失败: {str(e)}")
@@ -515,8 +514,8 @@ def process_single_issue(issue, data):
             issue_number,
             f"❌ RSS 订阅源访问失败\n\n无法获取 {info['feed']} 的内容，请检查 RSS 地址是否正确且可公开访问。\n\n检查时间: {format_beijing_time()}"
         )
-        # RSS 失败时也更新标签
-        update_issue_labels(issue_number, [status_label])
+        # RSS 失败时也添加状态标签
+        add_labels_to_issue(issue_number, [status_label])
         return False
 
     print(f"✓ RSS 抓取成功，获取 {len(posts)} 篇文章")
@@ -553,8 +552,8 @@ def process_single_issue(issue, data):
             issue_number,
             f"✅ 友链已更新\n\n- 网站名称: {info['title']}\n- 网站状态: {'在线' if website_online else '访问受限'}\n- 最新文章数: {len(posts)}\n- 自定义标签: {[label['name'] for label in custom_labels]}\n\n更新时间: {format_beijing_time()}"
         )
-        # 更新标签：状态标签 + 已通过
-        update_issue_labels(issue_number, [status_label, '已通过'])
+        # 添加状态标签 + 已通过，不删除原有标签
+        add_labels_to_issue(issue_number, [status_label, '已通过'])
     else:
         data['content'].append(friend_data)
         print(f"\n✓ 新增友链: {info['title']}")
@@ -562,8 +561,8 @@ def process_single_issue(issue, data):
             issue_number,
             f"✅ 友链申请已通过\n\n欢迎加入友链！\n\n- 网站名称: {info['title']}\n- 网站状态: {'在线' if website_online else '访问受限'}\n- 最新文章数: {len(posts)}\n- 自定义标签: {[label['name'] for label in custom_labels]}\n\n审核时间: {format_beijing_time()}"
         )
-        # 新申请：状态标签 + 已通过
-        update_issue_labels(issue_number, [status_label, '已通过'])
+        # 新申请：添加状态标签 + 已通过，不删除原有标签
+        add_labels_to_issue(issue_number, [status_label, '已通过'])
 
     print(f"{'='*60}\n")
     return True
