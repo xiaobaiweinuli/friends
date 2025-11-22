@@ -28,8 +28,8 @@ HEADERS = {
     'Accept': 'application/vnd.github.v3+json'
 }
 
-# 定义状态标签
-STATUS_LABELS = ['在线', '离线', '访问受限', '已通过', '待处理']
+# 定义状态标签（这些将被过滤掉）
+STATUS_LABELS = ['在线', '离线', '访问受限', '已通过', '待处理', '友链申请']
 
 def get_beijing_time():
     """获取北京时间 (UTC+8)"""
@@ -330,7 +330,7 @@ def update_issue_labels(issue_number, new_labels):
         
     current_labels = [label['name'] for label in current_issue.get('labels', [])]
     
-    # 过滤掉状态标签，保留其他标签（如"友链申请"）
+    # 过滤掉状态标签，保留其他标签（如自定义标签）
     filtered_labels = [label for label in current_labels if label not in STATUS_LABELS]
     
     # 添加新的状态标签
@@ -360,6 +360,77 @@ def get_issue(issue_number):
     except Exception as e:
         print(f"获取 Issue 失败: {str(e)}")
         return None
+
+def hex_to_hsl(hex_color):
+    """将十六进制颜色转换为HSL格式"""
+    # 移除 # 号
+    hex_color = hex_color.lstrip('#')
+    
+    # 解析RGB值
+    r = int(hex_color[0:2], 16) / 255.0
+    g = int(hex_color[2:4], 16) / 255.0
+    b = int(hex_color[4:6], 16) / 255.0
+    
+    # 计算HSL
+    max_val = max(r, g, b)
+    min_val = min(r, g, b)
+    
+    # 计算亮度
+    l = (max_val + min_val) / 2
+    
+    if max_val == min_val:
+        # 灰色
+        h = s = 0
+    else:
+        # 计算饱和度
+        diff = max_val - min_val
+        s = diff / (2 - max_val - min_val) if l > 0.5 else diff / (max_val + min_val)
+        
+        # 计算色相
+        if max_val == r:
+            h = (g - b) / diff + (6 if g < b else 0)
+        elif max_val == g:
+            h = (b - r) / diff + 2
+        else:  # max_val == b
+            h = (r - g) / diff + 4
+        
+        h /= 6
+    
+    # 转换为常用范围
+    h = round(h * 360)
+    s = round(s * 100)
+    l = round(l * 100)
+    
+    return h, s, l
+
+def filter_custom_labels(labels):
+    """过滤标签，只保留自定义标签并转换为所需格式"""
+    custom_labels = []
+    
+    for label in labels:
+        label_name = label['name']
+        
+        # 过滤掉状态标签
+        if label_name in STATUS_LABELS:
+            continue
+            
+        # 构建标签对象
+        label_obj = {
+            'name': label_name,
+            'color': label['color']
+        }
+        
+        # 计算HSL值
+        h, s, l = hex_to_hsl(label['color'])
+        label_obj.update({
+            'hue': h,
+            'saturation': s,
+            'lightness': l
+        })
+        
+        custom_labels.append(label_obj)
+    
+    return custom_labels
 
 def load_data():
     """加载现有数据"""
@@ -457,6 +528,9 @@ def process_single_issue(issue, data):
             existing_index = i
             break
 
+    # 过滤标签，只保留自定义标签
+    custom_labels = filter_custom_labels(issue.get('labels', []))
+
     # 构建友链数据
     friend_data = {
         'title': info['title'],
@@ -466,7 +540,7 @@ def process_single_issue(issue, data):
         'feed': info['feed'],
         'posts': posts,
         'issue_number': issue_number,
-        'labels': [label['name'] for label in issue.get('labels', [])],
+        'labels': custom_labels,  # 使用过滤后的自定义标签
         'last_checked': format_beijing_time(),
         'online': website_online
     }
@@ -477,7 +551,7 @@ def process_single_issue(issue, data):
         print(f"\n✓ 更新友链: {info['title']}")
         update_comment_on_issue(
             issue_number,
-            f"✅ 友链已更新\n\n- 网站名称: {info['title']}\n- 网站状态: {'在线' if website_online else '访问受限'}\n- 最新文章数: {len(posts)}\n\n更新时间: {format_beijing_time()}"
+            f"✅ 友链已更新\n\n- 网站名称: {info['title']}\n- 网站状态: {'在线' if website_online else '访问受限'}\n- 最新文章数: {len(posts)}\n- 自定义标签: {[label['name'] for label in custom_labels]}\n\n更新时间: {format_beijing_time()}"
         )
         # 更新标签：状态标签 + 已通过
         update_issue_labels(issue_number, [status_label, '已通过'])
@@ -486,7 +560,7 @@ def process_single_issue(issue, data):
         print(f"\n✓ 新增友链: {info['title']}")
         update_comment_on_issue(
             issue_number,
-            f"✅ 友链申请已通过\n\n欢迎加入友链！\n\n- 网站名称: {info['title']}\n- 网站状态: {'在线' if website_online else '访问受限'}\n- 最新文章数: {len(posts)}\n\n审核时间: {format_beijing_time()}"
+            f"✅ 友链申请已通过\n\n欢迎加入友链！\n\n- 网站名称: {info['title']}\n- 网站状态: {'在线' if website_online else '访问受限'}\n- 最新文章数: {len(posts)}\n- 自定义标签: {[label['name'] for label in custom_labels]}\n\n审核时间: {format_beijing_time()}"
         )
         # 新申请：状态标签 + 已通过
         update_issue_labels(issue_number, [status_label, '已通过'])
