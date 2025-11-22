@@ -28,6 +28,9 @@ HEADERS = {
     'Accept': 'application/vnd.github.v3+json'
 }
 
+# 定义状态标签
+STATUS_LABELS = ['在线', '离线', '访问受限', '已通过', '待处理']
+
 def resolve_domain(domain):
     """尝试解析域名"""
     try:
@@ -206,8 +209,6 @@ def process_feed_entries(feed, max_posts):
     print(f"成功处理 {len(posts)} 篇文章")
     return posts
 
-# 其余函数保持不变（parse_issue_body, get_all_issues, comment_on_issue, add_label_to_issue, load_data, save_data）
-
 def parse_issue_body(body):
     """解析 Issue 内容"""
     print(f"\n=== 开始解析 Issue 内容 ===")
@@ -250,31 +251,111 @@ def get_all_issues():
         print(f"获取 Issues 失败: {str(e)}")
         return []
 
-def comment_on_issue(issue_number, comment):
-    """在 Issue 上添加评论"""
+def get_issue_comments(issue_number):
+    """获取 Issue 的所有评论"""
     url = f'https://api.github.com/repos/{REPO}/issues/{issue_number}/comments'
-    data = {'body': comment}
-
+    
     try:
-        response = requests.post(url, headers=HEADERS, json=data)
+        response = requests.get(url, headers=HEADERS)
         response.raise_for_status()
-        return True
+        return response.json()
     except Exception as e:
-        print(f"评论失败: {str(e)}")
-        return False
+        print(f"获取评论失败: {str(e)}")
+        return []
 
-def add_label_to_issue(issue_number, label):
-    """给 Issue 添加标签"""
+def get_bot_comment_id(issue_number):
+    """获取机器人评论的 ID"""
+    comments = get_issue_comments(issue_number)
+    current_user = get_current_user()
+    
+    for comment in comments:
+        if comment.get('user', {}).get('login') == current_user:
+            return comment['id']
+    
+    return None
+
+def update_comment_on_issue(issue_number, comment_body):
+    """更新或创建评论"""
+    comment_id = get_bot_comment_id(issue_number)
+    
+    if comment_id:
+        # 更新现有评论
+        url = f'https://api.github.com/repos/{REPO}/issues/comments/{comment_id}'
+        data = {'body': comment_body}
+        
+        try:
+            response = requests.patch(url, headers=HEADERS, json=data)
+            response.raise_for_status()
+            print(f"✓ 更新评论: {comment_id}")
+            return True
+        except Exception as e:
+            print(f"更新评论失败: {str(e)}")
+            return False
+    else:
+        # 创建新评论
+        url = f'https://api.github.com/repos/{REPO}/issues/{issue_number}/comments'
+        data = {'body': comment_body}
+        
+        try:
+            response = requests.post(url, headers=HEADERS, json=data)
+            response.raise_for_status()
+            print(f"✓ 创建新评论")
+            return True
+        except Exception as e:
+            print(f"创建评论失败: {str(e)}")
+            return False
+
+def get_current_user():
+    """获取当前认证用户"""
+    url = 'https://api.github.com/user'
+    
+    try:
+        response = requests.get(url, headers=HEADERS)
+        response.raise_for_status()
+        return response.json().get('login', '')
+    except Exception as e:
+        print(f"获取用户信息失败: {str(e)}")
+        return ''
+
+def update_issue_labels(issue_number, new_labels):
+    """更新 Issue 标签 - 替换状态标签，保留其他标签"""
+    # 获取当前标签
+    current_issue = get_issue(issue_number)
+    if not current_issue:
+        return False
+        
+    current_labels = [label['name'] for label in current_issue.get('labels', [])]
+    
+    # 过滤掉状态标签，保留其他标签（如"友链申请"）
+    filtered_labels = [label for label in current_labels if label not in STATUS_LABELS]
+    
+    # 添加新的状态标签
+    final_labels = filtered_labels + new_labels
+    
+    # 更新标签
     url = f'https://api.github.com/repos/{REPO}/issues/{issue_number}/labels'
-    data = {'labels': [label]}
+    data = {'labels': final_labels}
 
     try:
-        response = requests.post(url, headers=HEADERS, json=data)
+        response = requests.put(url, headers=HEADERS, json=data)
         response.raise_for_status()
+        print(f"✓ 更新标签: {final_labels}")
         return True
     except Exception as e:
-        print(f"添加标签失败: {str(e)}")
+        print(f"更新标签失败: {str(e)}")
         return False
+
+def get_issue(issue_number):
+    """获取单个 Issue 信息"""
+    url = f'https://api.github.com/repos/{REPO}/issues/{issue_number}'
+    
+    try:
+        response = requests.get(url, headers=HEADERS)
+        response.raise_for_status()
+        return response.json()
+    except Exception as e:
+        print(f"获取 Issue 失败: {str(e)}")
+        return None
 
 def load_data():
     """加载现有数据"""
@@ -324,7 +405,7 @@ def process_single_issue(issue, data):
     if not all(k in info for k in ['title', 'url', 'feed']):
         missing = [k for k in ['title', 'url', 'feed'] if k not in info]
         print(f"❌ Issue #{issue_number} 信息不完整，缺少字段: {missing}")
-        comment_on_issue(
+        update_comment_on_issue(
             issue_number,
             f"❌ 友链信息不完整\n\n缺少以下必需字段: {', '.join(missing)}\n\n请检查 Issue 内容格式是否正确。\n\n检查时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
         )
@@ -336,17 +417,18 @@ def process_single_issue(issue, data):
     print(f"\n正在检查网站: {info['url']}")
     website_online = check_website_robust(info['url'])
     
+    # 确定状态标签
+    status_label = '在线' if website_online else '访问受限'
+    
     # 即使网站检查失败也继续处理，因为可能是 GitHub Actions 的网络限制
     if not website_online:
         print(f"⚠️ 网站检查失败，继续处理 RSS: {info['url']}")
-        comment_on_issue(
+        update_comment_on_issue(
             issue_number,
             f"⚠️ 网站访问检查失败\n\n在 GitHub Actions 环境中无法访问 {info['url']}，这可能是由于网络限制。\n\n我们会继续处理 RSS 订阅源，如果 RSS 可用，友链仍会被添加。\n\n检查时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
         )
-        add_label_to_issue(issue_number, '访问受限')
     else:
         print(f"✓ 网站在线")
-        add_label_to_issue(issue_number, '在线')
 
     # 抓取 RSS - 使用备用方案
     print(f"\n正在抓取 RSS: {info['feed']}")
@@ -354,10 +436,12 @@ def process_single_issue(issue, data):
 
     if not posts:
         print(f"❌ RSS 抓取失败: {info['feed']}")
-        comment_on_issue(
+        update_comment_on_issue(
             issue_number,
             f"❌ RSS 订阅源访问失败\n\n无法获取 {info['feed']} 的内容，请检查 RSS 地址是否正确且可公开访问。\n\n检查时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
         )
+        # RSS 失败时也更新标签
+        update_issue_labels(issue_number, [status_label])
         return False
 
     print(f"✓ RSS 抓取成功，获取 {len(posts)} 篇文章")
@@ -387,18 +471,21 @@ def process_single_issue(issue, data):
     if existing_index is not None:
         data['content'][existing_index] = friend_data
         print(f"\n✓ 更新友链: {info['title']}")
-        comment_on_issue(
+        update_comment_on_issue(
             issue_number,
             f"✅ 友链已更新\n\n- 网站名称: {info['title']}\n- 网站状态: {'在线' if website_online else '访问受限'}\n- 最新文章数: {len(posts)}\n\n更新时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
         )
+        # 更新标签：状态标签 + 已通过
+        update_issue_labels(issue_number, [status_label, '已通过'])
     else:
         data['content'].append(friend_data)
         print(f"\n✓ 新增友链: {info['title']}")
-        comment_on_issue(
+        update_comment_on_issue(
             issue_number,
             f"✅ 友链申请已通过\n\n欢迎加入友链！\n\n- 网站名称: {info['title']}\n- 网站状态: {'在线' if website_online else '访问受限'}\n- 最新文章数: {len(posts)}\n\n审核时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
         )
-        add_label_to_issue(issue_number, '已通过')
+        # 新申请：状态标签 + 已通过
+        update_issue_labels(issue_number, [status_label, '已通过'])
 
     print(f"{'='*60}\n")
     return True
