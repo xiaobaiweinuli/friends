@@ -27,13 +27,6 @@
       "issue_number": 6,
       "labels": [
         {
-          "name": "友链申请",
-          "color": "aaaaaa",
-          "hue": 0,
-          "saturation": 0,
-          "lightness": 67
-        },
-        {
           "name": "TG频道",
           "color": "aaaaaa",
           "hue": 0,
@@ -41,7 +34,7 @@
           "lightness": 67
         }
       ],
-      "last_checked": "2025-11-22 20:25:14",
+      "last_checked": "2025-11-22 20:32:06",
       "online": true
     }
   ]
