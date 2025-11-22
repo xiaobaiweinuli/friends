@@ -29,7 +29,7 @@ body:
       description: 你的头像 URL
       placeholder: 例如：https://cn.cravatar.com/avatar/xxx?s=512
     validations:
-      required: true
+      required: false
       
   - type: textarea
     id: description
