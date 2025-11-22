@@ -25,8 +25,23 @@
         }
       ],
       "issue_number": 6,
-      "labels": [],
-      "last_checked": "2025-11-22 20:14:52",
+      "labels": [
+        {
+          "name": "友链申请",
+          "color": "aaaaaa",
+          "hue": 0,
+          "saturation": 0,
+          "lightness": 67
+        },
+        {
+          "name": "TG频道",
+          "color": "aaaaaa",
+          "hue": 0,
+          "saturation": 0,
+          "lightness": 67
+        }
+      ],
+      "last_checked": "2025-11-22 20:25:14",
       "online": true
     }
   ]
