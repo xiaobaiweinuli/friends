@@ -9,6 +9,11 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
+          "title": "看起来微软还是一如既往的草台班子，我之前分享过绕过微软商店直接下载安装包的工具：",
+          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1745",
+          "published": "2025-11-30 22:20"
+        },
+        {
           "title": "android.os.ServiceManager.getService(\"usb\").isFunctionEnabled(\"adb\");",
           "link": "https://tg.xingshuang.xyz/posts/shortxml/71",
           "published": "2025-11-27 21:10"
@@ -16,11 +21,6 @@
         {
           "title": "⬆️追踪更新：十一月/26/2025 build56 6.42 Full VersionIDM还是需要经常更新的，否则一些特定网站的东西下载不下来（比如ytb的视频），需要经常更新的朋友们欢迎订阅本频道，我们会及时追踪更新",
           "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/39",
-          "published": "2025-11-27 19:11"
-        },
-        {
-          "title": "一款由四海一叶秋大佬为普通人开发的Windows流氓软件清除程序",
-          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/38",
           "published": "2025-11-27 19:11"
         }
       ],
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2025-11-30 00:15:32",
+      "last_checked": "2025-12-01 00:15:38",
       "online": true
     }
   ]
