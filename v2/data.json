@@ -9,19 +9,19 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
-          "title": "看起来微软还是一如既往的草台班子，我之前分享过绕过微软商店直接下载安装包的工具：",
-          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1745",
-          "published": "2025-11-30 22:20"
+          "title": "https://t.me/ZGQincLiqun/2416基于playwright的海盗狐狸kemonocr媒体直链提取，适合下载自己的收藏夹内容。使用说明：先安装配置playwrightpip in",
+          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1747",
+          "published": "2025-12-01 12:01"
         },
         {
-          "title": "android.os.ServiceManager.getService(\"usb\").isFunctionEnabled(\"adb\");",
-          "link": "https://tg.xingshuang.xyz/posts/shortxml/71",
-          "published": "2025-11-27 21:10"
+          "title": "已经支持识别系统架构使用合适的SDK工具，支持x64/x86/arm64系统（NuGet包里就这些）；支持打包appxbundle和msixbundle",
+          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1746",
+          "published": "2025-12-01 11:44"
         },
         {
-          "title": "⬆️追踪更新：十一月/26/2025 build56 6.42 Full VersionIDM还是需要经常更新的，否则一些特定网站的东西下载不下来（比如ytb的视频），需要经常更新的朋友们欢迎订阅本频道，我们会及时追踪更新",
-          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/39",
-          "published": "2025-11-27 19:11"
+          "title": "https://t.me/mijiahulian",
+          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/41",
+          "published": "2025-12-01 08:38"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2025-12-01 00:15:38",
+      "last_checked": "2025-12-02 00:20:02",
       "online": true
     }
   ]
