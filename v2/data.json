@@ -9,19 +9,19 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
+          "title": "Post 46",
+          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/46",
+          "published": "2025-12-04 22:38"
+        },
+        {
+          "title": "https://ipv6-arpa-ssl.yutian88881.workers.dev/",
+          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/45",
+          "published": "2025-12-04 14:09"
+        },
+        {
           "title": "https://www.spotify.com/us/wrapped/因为风控的缘故，今年战绩下滑严重。https://open.spotify.com/playlist/37i9dQZEVXd5FK",
           "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1749",
           "published": "2025-12-03 22:23"
-        },
-        {
-          "title": "@TgTranslatorBot 你好",
-          "link": "https://tg.xingshuang.xyz/posts/shortxml/83",
-          "published": "2025-12-03 19:46"
-        },
-        {
-          "title": "https://youtu.be/ilzjXHxFjx8C1C2确实是140瓦，是我忘了开KM003C的PD3.1测量档，最大240W是虚标，实际最大功率180瓦，不过这价格摆在那还真不好说啥。",
-          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1748",
-          "published": "2025-12-03 17:51"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2025-12-04 00:20:21",
+      "last_checked": "2025-12-05 00:19:49",
       "online": true
     }
   ]
