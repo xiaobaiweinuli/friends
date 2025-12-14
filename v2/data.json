@@ -9,6 +9,11 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
+          "title": "Sam Helper--shizuku",
+          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/47",
+          "published": "2025-12-14 18:36"
+        },
+        {
           "title": "🎯 核心发现在澎湃OS（HyperOS）上，覆盖状态栏的唯一必需配置是：if (android.os.Build.VERSION.SDK_INT >= 28) {    lp.layoutInDisplayCutoutMode = 1;  // LAYOUT_IN_DISPLAY_CUTOUT_MODE_SHORT_EDGES}这个属性的作用：Android 9 (API 28) 引入，用于处理刘海屏/挖孔屏layoutInDisplayCutoutMode = 1 表示 LAYOUT_IN_DISPLAY_CUTOUT_MODE_SHORT_EDGES允许窗口内容延伸到屏幕的短边刘海区域（包括状态栏）lp.layoutInDisplayCutoutMode = WindowManager.LayoutParams.LAYOUT_IN_DISPLAY_CUTOUT_MODE_SHORT_EDGES;",
           "link": "https://tg.xingshuang.xyz/posts/shortxml/84",
           "published": "2025-12-13 16:38"
@@ -17,11 +22,6 @@
           "title": "版权主张测试",
           "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1776",
           "published": "2025-12-12 17:44"
-        },
-        {
-          "title": "美国学生证生成重制版",
-          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1775",
-          "published": "2025-12-10 03:44"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2025-12-14 00:16:06",
+      "last_checked": "2025-12-15 00:15:55",
       "online": true
     }
   ]
