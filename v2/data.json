@@ -9,6 +9,11 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
+          "title": "https://github.com/yimiha/TVbox-interface",
+          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/48",
+          "published": "2025-12-18 22:47"
+        },
+        {
           "title": "https://github.com/k1tbyte/Wemod-Patcherhttps://t.me/ZGQincLiqun/3443WeMod在上个月已更名为Wand，老补丁还是可以用的，不过不",
           "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1780",
           "published": "2025-12-17 23:24"
@@ -17,11 +22,6 @@
           "title": "var clazz = shortx .getClass();",
           "link": "https://tg.xingshuang.xyz/posts/shortxml/174",
           "published": "2025-12-17 15:21"
-        },
-        {
-          "title": "android.os.ServiceManager.getService(\"usb\").setCurrentFunctions(4, 0);",
-          "link": "https://tg.xingshuang.xyz/posts/shortxml/173",
-          "published": "2025-12-17 01:16"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2025-12-18 00:19:16",
+      "last_checked": "2025-12-19 00:20:10",
       "online": true
     }
   ]
