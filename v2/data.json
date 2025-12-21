@@ -9,6 +9,11 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
+          "title": "三星浏览器PC版已经结束内测阶段转为公测，现在不登录三星账号也能下载",
+          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1781",
+          "published": "2025-12-21 10:24"
+        },
+        {
           "title": "键盘锁",
           "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/50",
           "published": "2025-12-20 14:58"
@@ -17,11 +22,6 @@
           "title": "https://github.com/huanghui0906/API",
           "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/49",
           "published": "2025-12-19 21:34"
-        },
-        {
-          "title": "https://github.com/yimiha/TVbox-interface",
-          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/48",
-          "published": "2025-12-18 22:47"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2025-12-21 00:16:13",
+      "last_checked": "2025-12-22 00:15:54",
       "online": true
     }
   ]
