@@ -9,19 +9,19 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
-          "title": "三星浏览器PC版已经结束内测阶段转为公测，现在不登录三星账号也能下载",
-          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1781",
-          "published": "2025-12-21 10:24"
+          "title": "ShortX新版本提供了一个新方法,getUiAutomation通过shortx.getUiAutomation()调用",
+          "link": "https://tg.xingshuang.xyz/posts/shortxml/176",
+          "published": "2025-12-22 23:41"
         },
         {
-          "title": "键盘锁",
-          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/50",
-          "published": "2025-12-20 14:58"
+          "title": "关于推特无法登录和TG付费短信的一些细节和可能可行的解决方法📱 推特适用于：LoginError.AttestationDenied目前没研究透彻风控是如何被触发的，唯一可以确认的是推特目前登录走自己的OAuth的同时会发送Play Integrity Token，一旦三个Verdict Label都不满足，服务器直接拒绝下发令牌，也就是说如果你的设备不支持GMS根本无法登录",
+          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1782",
+          "published": "2025-12-22 21:35"
         },
         {
-          "title": "https://github.com/huanghui0906/API",
-          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/49",
-          "published": "2025-12-19 21:34"
+          "title": "https://github.com/AceDroidX/frp-Android",
+          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/51",
+          "published": "2025-12-22 17:07"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2025-12-22 00:15:54",
+      "last_checked": "2025-12-23 00:18:06",
       "online": true
     }
   ]
