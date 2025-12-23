@@ -9,19 +9,19 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
-          "title": "ShortX新版本提供了一个新方法,getUiAutomation通过shortx.getUiAutomation()调用",
-          "link": "https://tg.xingshuang.xyz/posts/shortxml/176",
-          "published": "2025-12-22 23:41"
+          "title": "针对 ShortX（及其它 Android 脚本环境）中遇到的“脚本运行多次产生多个重复窗口”的问题解决方案的技术：",
+          "link": "https://tg.xingshuang.xyz/posts/shortxml/180",
+          "published": "2025-12-23 19:11"
         },
         {
-          "title": "关于推特无法登录和TG付费短信的一些细节和可能可行的解决方法📱 推特适用于：LoginError.AttestationDenied目前没研究透彻风控是如何被触发的，唯一可以确认的是推特目前登录走自己的OAuth的同时会发送Play Integrity Token，一旦三个Verdict Label都不满足，服务器直接拒绝下发令牌，也就是说如果你的设备不支持GMS根本无法登录",
-          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1782",
-          "published": "2025-12-22 21:35"
+          "title": "shortx中JavaScript注意事项添加 UI 线程内的异常保护，​将 run 内部的代码也包裹在 try-catch 中，防止崩溃直接透传给系统，",
+          "link": "https://tg.xingshuang.xyz/posts/shortxml/179",
+          "published": "2025-12-23 16:06"
         },
         {
-          "title": "https://github.com/AceDroidX/frp-Android",
-          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/51",
-          "published": "2025-12-22 17:07"
+          "title": "使用 Any.pack() 将 Action 包装成 protobuf 的 Any 类型",
+          "link": "https://tg.xingshuang.xyz/posts/shortxml/178",
+          "published": "2025-12-23 15:47"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2025-12-23 00:18:06",
+      "last_checked": "2025-12-24 00:18:39",
       "online": true
     }
   ]
