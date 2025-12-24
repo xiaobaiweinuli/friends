@@ -9,19 +9,19 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
-          "title": "针对 ShortX（及其它 Android 脚本环境）中遇到的“脚本运行多次产生多个重复窗口”的问题解决方案的技术：",
-          "link": "https://tg.xingshuang.xyz/posts/shortxml/180",
-          "published": "2025-12-23 19:11"
+          "title": "Post 55",
+          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/55",
+          "published": "2025-12-24 21:47"
         },
         {
-          "title": "shortx中JavaScript注意事项添加 UI 线程内的异常保护，​将 run 内部的代码也包裹在 try-catch 中，防止崩溃直接透传给系统，",
-          "link": "https://tg.xingshuang.xyz/posts/shortxml/179",
-          "published": "2025-12-23 16:06"
+          "title": "// 引入相关 Android 类",
+          "link": "https://tg.xingshuang.xyz/posts/shortxml/184",
+          "published": "2025-12-24 20:28"
         },
         {
-          "title": "使用 Any.pack() 将 Action 包装成 protobuf 的 Any 类型",
-          "link": "https://tg.xingshuang.xyz/posts/shortxml/178",
-          "published": "2025-12-23 15:47"
+          "title": "//是否为静音状态Boolean mode_ringer = (android.provider.Settings$System.getInt(context.contentResolver, 'mode_ringer'), 0) == 0;//是否为振动状态Boolean mode_ringer = (android.provider.Settings$System.getInt(context.contentResolver, 'mode_ringer'), 0) == 1;//是否为响铃状态Boolean mode_ringer = (android.provider.Settings$System.getInt(context.contentResolver, 'mode_ringer'), 0) == 2;",
+          "link": "https://tg.xingshuang.xyz/posts/shortxml/183",
+          "published": "2025-12-24 20:21"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2025-12-24 00:18:39",
+      "last_checked": "2025-12-25 00:17:56",
       "online": true
     }
   ]
