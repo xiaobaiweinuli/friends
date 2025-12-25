@@ -9,19 +9,19 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
-          "title": "Post 55",
-          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/55",
-          "published": "2025-12-24 21:47"
+          "title": "Post 1785",
+          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1785",
+          "published": "2025-12-25 14:03"
         },
         {
-          "title": "// 引入相关 Android 类",
-          "link": "https://tg.xingshuang.xyz/posts/shortxml/184",
-          "published": "2025-12-24 20:28"
+          "title": "🌶论坛要邀请码nodessk，Linuxdo",
+          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/56",
+          "published": "2025-12-25 13:21"
         },
         {
-          "title": "//是否为静音状态Boolean mode_ringer = (android.provider.Settings$System.getInt(context.contentResolver, 'mode_ringer'), 0) == 0;//是否为振动状态Boolean mode_ringer = (android.provider.Settings$System.getInt(context.contentResolver, 'mode_ringer'), 0) == 1;//是否为响铃状态Boolean mode_ringer = (android.provider.Settings$System.getInt(context.contentResolver, 'mode_ringer'), 0) == 2;",
-          "link": "https://tg.xingshuang.xyz/posts/shortxml/183",
-          "published": "2025-12-24 20:21"
+          "title": "Steam Manifest Grabber v1.6添加版本控制；添加API重试机制；升级UA",
+          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1784",
+          "published": "2025-12-25 03:13"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2025-12-25 00:17:56",
+      "last_checked": "2025-12-26 00:17:42",
       "online": true
     }
   ]
