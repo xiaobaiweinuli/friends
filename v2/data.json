@@ -9,19 +9,19 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
+          "title": "The Classrooms存档编辑器",
+          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1787",
+          "published": "2025-12-26 01:47"
+        },
+        {
+          "title": "三折叠没有挺过暴力测试，不过也在意料之中",
+          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1786",
+          "published": "2025-12-26 01:23"
+        },
+        {
           "title": "Post 1785",
           "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1785",
           "published": "2025-12-25 14:03"
-        },
-        {
-          "title": "🌶论坛要邀请码nodessk，Linuxdo",
-          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/56",
-          "published": "2025-12-25 13:21"
-        },
-        {
-          "title": "Steam Manifest Grabber v1.6添加版本控制；添加API重试机制；升级UA",
-          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1784",
-          "published": "2025-12-25 03:13"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2025-12-26 00:17:42",
+      "last_checked": "2025-12-27 00:16:45",
       "online": true
     }
   ]
