@@ -9,6 +9,11 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
+          "title": "https://github.com/ZGQ-inc/the-classrooms-save-editor",
+          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1788",
+          "published": "2025-12-28 16:41"
+        },
+        {
           "title": "The Classrooms存档编辑器",
           "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1787",
           "published": "2025-12-26 01:47"
@@ -17,11 +22,6 @@
           "title": "三折叠没有挺过暴力测试，不过也在意料之中",
           "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1786",
           "published": "2025-12-26 01:23"
-        },
-        {
-          "title": "Post 1785",
-          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1785",
-          "published": "2025-12-25 14:03"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2025-12-28 00:16:10",
+      "last_checked": "2025-12-29 00:16:30",
       "online": true
     }
   ]
