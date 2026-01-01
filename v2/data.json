@@ -9,6 +9,11 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
+          "title": "史上最严国标《移动电源安全技术规范》的征求意见稿已经过了1个多月甚至跨年了还没有动静，那估计大概率要正式实施了",
+          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1794",
+          "published": "2026-01-01 19:33"
+        },
+        {
           "title": "新年快乐！",
           "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1793",
           "published": "2026-01-01 00:00"
@@ -17,11 +22,6 @@
           "title": "https://github.com/metowolf/vCards/",
           "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/60",
           "published": "2025-12-30 12:02"
-        },
-        {
-          "title": "https://xbt.super.site/10cd36a5eb7c4e19b16a0b7b57e5be8a小贝塔的shell教程",
-          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/59",
-          "published": "2025-12-30 11:50"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2026-01-01 00:17:57",
+      "last_checked": "2026-01-02 00:18:25",
       "online": true
     }
   ]
