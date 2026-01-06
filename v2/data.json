@@ -9,6 +9,11 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
+          "title": "TG机器人api参考：主要是miniapp与网站交互登录",
+          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/61",
+          "published": "2026-01-06 00:34"
+        },
+        {
           "title": "⚠️以下内容涉及《怪奇物语》剧透，请酌情阅读",
           "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1796",
           "published": "2026-01-03 02:12"
@@ -17,11 +22,6 @@
           "title": "https://youtu.be/KRHSc6iJmP0?t=275https://youtu.be/YwgNxgWr8Wc?t=458一想到演员身上糊满了KY凝胶，还有Duffer兄弟向杜蕾斯采购大",
           "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1795",
           "published": "2026-01-03 01:10"
-        },
-        {
-          "title": "史上最严国标《移动电源安全技术规范》的征求意见稿已经过了1个多月甚至跨年了还没有动静，那估计大概率要正式实施了",
-          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1794",
-          "published": "2026-01-01 19:33"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2026-01-06 00:19:52",
+      "last_checked": "2026-01-07 00:19:51",
       "online": true
     }
   ]
