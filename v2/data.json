@@ -9,6 +9,11 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
+          "title": "https://apps.apple.com/cn/app/%E6%89%BE%E4%B8%8D%E8%82%89-%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%B1%82%E8%81",
+          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/62",
+          "published": "2026-01-08 21:58"
+        },
+        {
           "title": "TG机器人api参考：主要是miniapp与网站交互登录",
           "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/61",
           "published": "2026-01-06 00:34"
@@ -17,11 +22,6 @@
           "title": "⚠️以下内容涉及《怪奇物语》剧透，请酌情阅读",
           "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1796",
           "published": "2026-01-03 02:12"
-        },
-        {
-          "title": "https://youtu.be/KRHSc6iJmP0?t=275https://youtu.be/YwgNxgWr8Wc?t=458一想到演员身上糊满了KY凝胶，还有Duffer兄弟向杜蕾斯采购大",
-          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1795",
-          "published": "2026-01-03 01:10"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2026-01-08 00:21:08",
+      "last_checked": "2026-01-09 00:20:35",
       "online": true
     }
   ]
