@@ -9,19 +9,19 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
+          "title": "### Cloudflare D1 给 groups 表添加字段的 SQL 命令1.  添加 mute_duration 字段    ALTER TABLE groups",
+          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/63",
+          "published": "2026-01-09 23:48"
+        },
+        {
+          "title": "https://chatgpt.com/veterans-claimChatGPT Plus美国大兵的活动疑似结束了。因为ChatGPT属实太拉胯了，https://lmarena.ai/leader",
+          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1797",
+          "published": "2026-01-09 14:18"
+        },
+        {
           "title": "https://apps.apple.com/cn/app/%E6%89%BE%E4%B8%8D%E8%82%89-%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%B1%82%E8%81",
           "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/62",
           "published": "2026-01-08 21:58"
-        },
-        {
-          "title": "TG机器人api参考：主要是miniapp与网站交互登录",
-          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/61",
-          "published": "2026-01-06 00:34"
-        },
-        {
-          "title": "⚠️以下内容涉及《怪奇物语》剧透，请酌情阅读",
-          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1796",
-          "published": "2026-01-03 02:12"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2026-01-09 00:20:35",
+      "last_checked": "2026-01-10 00:18:44",
       "online": true
     }
   ]
