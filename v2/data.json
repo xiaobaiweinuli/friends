@@ -9,6 +9,11 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
+          "title": "我发现很多人都有一个误区，认为解锁BL不会导致Knox熔断，刷入第三方ROM（比如root）才会，我一位玩一加的朋友竟然也是这么认为的，我在此要纠正一下",
+          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1801",
+          "published": "2026-01-17 01:44"
+        },
+        {
           "title": "https://t.me/ZGQincLiqun/3499说一下近期BT站现状：🔵1137x可能是为了规避风险，1377x.to无法直接访问，需要访问 1377x.to/home/ 。🔵 btdi",
           "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1800",
           "published": "2026-01-15 17:59"
@@ -17,11 +22,6 @@
           "title": "https://t.me/ZGQincLiqun/3319Win11的开始菜单重新设计了，更加依托答辩了，还导致Windhawk的MOD失效了，最近也是成功的赤到了这坨史，怎么办？妥协？妥协是不可能妥",
           "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1798",
           "published": "2026-01-14 17:22"
-        },
-        {
-          "title": "#安卓 #tool #autosync 🔵介绍 自动化同步软件，支持大量国外主流网盘和FTP、WebDAV等协议，支持差异同步，功能强大好用 注：由于签名校验问题，Google Drive不可用 🟠特性 解锁付费订阅，去除各种验证弹窗昨晚发的有点问题",
-          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/68",
-          "published": "2026-01-10 13:18"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2026-01-17 00:20:09",
+      "last_checked": "2026-01-18 00:15:18",
       "online": true
     }
   ]
