@@ -9,6 +9,11 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
+          "title": "https://github.com/akudamatata/Solara",
+          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/74",
+          "published": "2026-01-26 12:59"
+        },
+        {
           "title": "#pywranglerpip install uv",
           "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/72",
           "published": "2026-01-25 12:59"
@@ -17,11 +22,6 @@
           "title": "基于 Python 的 cloudflared 全功能图形化管理工具",
           "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/71",
           "published": "2026-01-24 19:14"
-        },
-        {
-          "title": "SmartThings会检测设备是否root，而且检测方法特别草台班子，就是检查有没有安装root相关的应用程序",
-          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1805",
-          "published": "2026-01-21 18:55"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2026-01-26 00:17:25",
+      "last_checked": "2026-01-27 00:25:06",
       "online": true
     }
   ]
