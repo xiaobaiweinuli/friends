@@ -9,19 +9,19 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
+          "title": "Google搜索",
+          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/76",
+          "published": "2026-01-31 15:25"
+        },
+        {
+          "title": "cloudflare测试",
+          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/75",
+          "published": "2026-01-31 15:02"
+        },
+        {
           "title": "Spicetify + Cloudflare Tunnels + Home Assistant 实现Spotify专辑封面颜色控制智能家居",
           "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1810",
           "published": "2026-01-27 03:33"
-        },
-        {
-          "title": "国产Stream Deck？价格只要四分之一？无意间看到一家叫妙联宝MiraBox的厂家也在做知名桌搭Stream Deck，是第一家对标Elgato的，不止产品像，甚至英文名就叫Stream Dock，我也是买了个对标MK2（$120）的M18（￥260）玩玩，玩了一周后发现Stream Deck有的功能这东西几乎都有，像我平时用到的OBS、PS、PR、Ai等快捷键支持，媒体控制也支持Spotify，可以一键打开网页，一键切换副屏，启动关闭应用，监控信息，甚至Home Assistant也是支持的",
-          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1809",
-          "published": "2026-01-27 03:12"
-        },
-        {
-          "title": "https://github.com/akudamatata/Solara",
-          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/74",
-          "published": "2026-01-26 12:59"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2026-01-31 00:30:36",
+      "last_checked": "2026-02-01 00:19:35",
       "online": true
     }
   ]
