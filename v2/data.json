@@ -9,6 +9,11 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
+          "title": "据目前的不完全统计，Google AI Pro被清退的大部分都是用了1key之前的某些学校SSO漏洞利用的方法导致被谷歌拉清单，文档法被清算的概率很小，至少我目前没见过，因为谷歌不会真的去查你是不是真的在读学生，毕竟拿不到数据库，所以基本上是匿名的，不过现在可以用1key，已经改成文档法了",
+          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1814",
+          "published": "2026-02-02 19:44"
+        },
+        {
           "title": "/**",
           "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/77",
           "published": "2026-02-01 21:19"
@@ -17,11 +22,6 @@
           "title": "#论坛",
           "link": "https://tg.xingshuang.xyz/posts/NavCollect/23",
           "published": "2026-02-01 15:51"
-        },
-        {
-          "title": "平替FN Connect的一个方法：使用Cloudflare的ZeroTrust的Tunnels + Access",
-          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1813",
-          "published": "2026-02-01 01:07"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2026-02-02 00:20:06",
+      "last_checked": "2026-02-03 00:29:29",
       "online": true
     }
   ]
