@@ -9,19 +9,19 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
-          "title": "据目前的不完全统计，Google AI Pro被清退的大部分都是用了1key之前的某些学校SSO漏洞利用的方法导致被谷歌拉清单，文档法被清算的概率很小，至少我目前没见过，因为谷歌不会真的去查你是不是真的在读学生，毕竟拿不到数据库，所以基本上是匿名的，不过现在可以用1key，已经改成文档法了",
-          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1814",
-          "published": "2026-02-02 19:44"
+          "title": "https://github.com/Doryoku1223/TabulaV3",
+          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/82",
+          "published": "2026-02-04 00:06"
         },
         {
-          "title": "/**",
-          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/77",
-          "published": "2026-02-01 21:19"
+          "title": "#prompt  #翻译 现在我需要你协助我进行翻译工作，请严格遵守以下规则，不得擅自改变、补充或弱化任何要求：",
+          "link": "https://tg.xingshuang.xyz/posts/NavCollect/32",
+          "published": "2026-02-03 23:55"
         },
         {
-          "title": "#论坛",
-          "link": "https://tg.xingshuang.xyz/posts/NavCollect/23",
-          "published": "2026-02-01 15:51"
+          "title": "测试",
+          "link": "https://tg.xingshuang.xyz/posts/NavCollect/31",
+          "published": "2026-02-03 23:22"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2026-02-03 00:29:29",
+      "last_checked": "2026-02-04 00:43:12",
       "online": true
     }
   ]
