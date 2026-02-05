@@ -9,6 +9,11 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
+          "title": "#Telegram",
+          "link": "https://tg.xingshuang.xyz/posts/NavCollect/33",
+          "published": "2026-02-05 13:00"
+        },
+        {
           "title": "#开源项目#Rusttirith仅凭肉眼，根本看不出下面两个curl命令的区别：curl -sSL",
           "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/83",
           "published": "2026-02-04 19:38"
@@ -17,11 +22,6 @@
           "title": "Denuvo并没有被破解",
           "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1816",
           "published": "2026-02-04 18:19"
-        },
-        {
-          "title": "https://store.steampowered.com/app/1631270/_StarRupture/全物品存档，最新存档已经启动遗忘引擎，通关Early Access现有全部内容。存档1：",
-          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1815",
-          "published": "2026-02-04 00:58"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2026-02-05 00:37:19",
+      "last_checked": "2026-02-06 00:38:24",
       "online": true
     }
   ]
