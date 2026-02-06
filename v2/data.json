@@ -9,19 +9,19 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
-          "title": "#Telegram",
-          "link": "https://tg.xingshuang.xyz/posts/NavCollect/33",
-          "published": "2026-02-05 13:00"
+          "title": "仓库被封了，所以建了一个空壳索引仓库，大家可以star此仓库，但实际的资源文件被放在了第三方服务器",
+          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/85",
+          "published": "2026-02-07 00:28"
         },
         {
-          "title": "#开源项目#Rusttirith仅凭肉眼，根本看不出下面两个curl命令的区别：curl -sSL",
-          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/83",
-          "published": "2026-02-04 19:38"
+          "title": "- Meting-API- 音乐下载器- 音乐下载机器人均已更新支持专辑解析，修复Q音无专辑歌曲不显示封面图问题",
+          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/84",
+          "published": "2026-02-06 19:11"
         },
         {
-          "title": "Denuvo并没有被破解",
-          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1816",
-          "published": "2026-02-04 18:19"
+          "title": "轻量化实现",
+          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1817",
+          "published": "2026-02-06 03:46"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2026-02-06 00:38:24",
+      "last_checked": "2026-02-07 00:35:53",
       "online": true
     }
   ]
