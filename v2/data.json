@@ -9,19 +9,19 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
-          "title": "仓库被封了，所以建了一个空壳索引仓库，大家可以star此仓库，但实际的资源文件被放在了第三方服务器",
-          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/85",
-          "published": "2026-02-07 00:28"
+          "title": "#系统 #刷机#MIUI>",
+          "link": "https://tg.xingshuang.xyz/posts/NavCollect/60",
+          "published": "2026-02-07 23:39"
         },
         {
-          "title": "- Meting-API- 音乐下载器- 音乐下载机器人均已更新支持专辑解析，修复Q音无专辑歌曲不显示封面图问题",
-          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/84",
-          "published": "2026-02-06 19:11"
+          "title": "#小知识 安卓15以下，可以用adb实现降级，安卓15及以上只能root",
+          "link": "https://tg.xingshuang.xyz/posts/NavCollect/59",
+          "published": "2026-02-07 23:38"
         },
         {
-          "title": "轻量化实现",
-          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1817",
-          "published": "2026-02-06 03:46"
+          "title": "#小知识⏺ 微信中输入“#”键的实用功能",
+          "link": "https://tg.xingshuang.xyz/posts/NavCollect/58",
+          "published": "2026-02-07 23:35"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2026-02-07 00:35:53",
+      "last_checked": "2026-02-08 00:20:40",
       "online": true
     }
   ]
