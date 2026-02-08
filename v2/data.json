@@ -9,19 +9,19 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
-          "title": "#系统 #刷机#MIUI>",
-          "link": "https://tg.xingshuang.xyz/posts/NavCollect/60",
-          "published": "2026-02-07 23:39"
+          "title": "#web工具域名比价：",
+          "link": "https://tg.xingshuang.xyz/posts/NavCollect/61",
+          "published": "2026-02-08 22:03"
+        },
+        {
+          "title": "这个跳过谷歌验证，更好使",
+          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/105",
+          "published": "2026-02-08 00:29"
         },
         {
           "title": "#小知识 安卓15以下，可以用adb实现降级，安卓15及以上只能root",
           "link": "https://tg.xingshuang.xyz/posts/NavCollect/59",
           "published": "2026-02-07 23:38"
-        },
-        {
-          "title": "#小知识⏺ 微信中输入“#”键的实用功能",
-          "link": "https://tg.xingshuang.xyz/posts/NavCollect/58",
-          "published": "2026-02-07 23:35"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2026-02-08 00:20:40",
+      "last_checked": "2026-02-09 00:21:27",
       "online": true
     }
   ]
