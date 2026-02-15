@@ -9,19 +9,19 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
+          "title": "科学上网软件App客户端iOS/iPadOS:   * Surge iOS              频道 群组 群组 群组  更新订阅制,首年:$49.99,次年开始:$14.99/年   * Quantumult X     频道 群组 群组  $7.99 ➝ $9.99   * Shadowrocket(小火箭)  频道 群组  $2.99   * Loon                        频道 群组 群组  $7.99   * Loon Lite                频道 群组 群组  $0.99   * Egern                       频道 群组  自2.6.0起,改为:免费+内购$5.99   * Stash                       频道 群组  $3.99   * Pharos Pro            频道 群组 $2.99   * sing-box VT  Free   * Karing  Free   * Clash Mi  Free   * LanceX  $2.99   * Pharos Pro  $2.99   * Streisand Free   * Vproxy Free   * Hiddify  Free   * Bamboo Dragonfly Free   * Jamjams Free(搬瓦工JMS推出的)   * V2Box   * Tunna   * Outline   * Connect NowtvOS:   * Surge tvOS   * Quantumult X   * Shadowrocket   * Loon   * Loon Lite   * StashAndroid/HarmonyOS/安卓:   * FlClash   * Surfboard   * FlyClash-Android   * ClashMetaForAndroid   * Karing   * Clash Mi   * LiClash   * Clash for Android   * sing-box   * NekoBoxForAndroid   * NekoBoxForAndroid   * SagerNet   * Exclave   * Hiddify   * Vproxy   * v2rayNG   * Shadowsocks for Android   * Clash for Flutter   * MikuBoxForAndroid   * clash-xiaoy   * Raven   * AnyPortalHarmonyOS NEXT/纯血鸿蒙：   * ClashBox   * 通途MConnectWindows:   * Mihomo Party (已改名: Clash Party)   * Sparkle   * Sparkle   * FlClash   * Clash Mi    * Clash Verge Rev   * Clash for Windows   * Clash Nyanpasu   * FlyClash   * GUI.for.Clash   * GUI.for.SingBox   * Pandora-Box   * FlowZ   * Clash Verge   * Clash Warden   * ClashTui   * Clashr-Auto   * Clash for Flutter   * Clash.Mini   * clash-xiaoy   * Stelliberty   * mihomo   * sing-box   * Hiddify-Next   * Vproxy   * v2rayN   * Netch   * Shadowsocks-windows   * NekoRay   * Karing   * AnyPortal   * NeedyClash   * Win2SocksmacOS:   * ClashMac   * Sparkle   * Mihomo Party (已改名: Clash Party)   * Surge Mac  $49.99/$69.99/$99.99   * Stash for macOS   * Loon for Mac   * Quantumult X   * Shadowrocket(小火箭)   * Sparkle   * FlClash   * FlowZ   * Clash Mi    * Clash Verge Rev   * Clash for Windows   * Clash Nyanpasu   * ClashX.Meta   * ClashMac   * Vproxy   * ClashX   * ClashX Pro   * mihomo   * sing-box   * Hiddify-Next   * Karing   * AnyPortal   * NeedyClash   * FlowZLinux:   * Mihomo Party (已改名: Clash Party)   * Sparkle   * FlClash   * Clash for Windows   * Clash Nyanpasu   * Vproxy   * mihomo   * sing-box   * Hiddify-Next   * AnyPortal   * NeedyClash路由器:   * OpenClash   * OpenWrt-nikki   * OpenWrt-momo   * Passwall客户端:   *",
+          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/116",
+          "published": "2026-02-15 22:43"
+        },
+        {
+          "title": "#APP#微信> 微信历史版本",
+          "link": "https://tg.xingshuang.xyz/posts/NavCollect/63",
+          "published": "2026-02-15 19:30"
+        },
+        {
           "title": "爪云（clawCloud）",
           "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/115",
           "published": "2026-02-14 22:36"
-        },
-        {
-          "title": "#微信",
-          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/114",
-          "published": "2026-02-14 21:36"
-        },
-        {
-          "title": "私有消息推送pushmeaccnotifyntfy",
-          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/113",
-          "published": "2026-02-14 16:42"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2026-02-15 00:20:20",
+      "last_checked": "2026-02-16 00:20:32",
       "online": true
     }
   ]
