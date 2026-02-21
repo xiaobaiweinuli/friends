@@ -9,6 +9,11 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
+          "title": "https://blog.xingshuang.xyz/2026/02/20/双扣-升级规则/",
+          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/119",
+          "published": "2026-02-21 01:24"
+        },
+        {
           "title": "一个现代化的电子邮件编辑器，能够轻松创建美观且响应式的电子邮件模板",
           "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/118",
           "published": "2026-02-16 14:22"
@@ -17,11 +22,6 @@
           "title": "Cf反代emby",
           "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/117",
           "published": "2026-02-16 11:07"
-        },
-        {
-          "title": "Kemopop!祝大家除夕/新年快乐",
-          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1819",
-          "published": "2026-02-16 01:41"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2026-02-21 00:29:30",
+      "last_checked": "2026-02-22 00:19:46",
       "online": true
     }
   ]
