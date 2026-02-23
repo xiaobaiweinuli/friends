@@ -9,6 +9,11 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
+          "title": "https://github.com/ZGQ-inc/home-llm-cnWIP。基于Gemma3训练一个Home Assistant专用的轻量模型，示例基于 google/gemma-3-1b-i",
+          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1821",
+          "published": "2026-02-23 23:42"
+        },
+        {
           "title": "settings put global preferred_nr_bands \"28/1,41,79\"",
           "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/120",
           "published": "2026-02-22 15:21"
@@ -17,11 +22,6 @@
           "title": "https://t.me/ZGQinc_chat_room/59389三折叠 TriFold & W26某种程度上我也算三星体验店老顾客了。（",
           "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1820",
           "published": "2026-02-22 00:47"
-        },
-        {
-          "title": "https://blog.xingshuang.xyz/2026/02/20/双扣-升级规则/",
-          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/119",
-          "published": "2026-02-21 01:24"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2026-02-23 00:20:42",
+      "last_checked": "2026-02-24 00:46:23",
       "online": true
     }
   ]
