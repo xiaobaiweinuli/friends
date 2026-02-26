@@ -9,6 +9,11 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
+          "title": "S26U的蓝牙S Pen没有回归，期望落空，防窥屏其实我不是很感兴趣",
+          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1828",
+          "published": "2026-02-26 17:59"
+        },
+        {
           "title": "https://t.me/RikkaTiNew/1582攻击者卷土重来， @RikkaTiNew 关联群组 @Rikka_Ti 惨遭毒手，攻击者先用大量账号进群发一些正常的GIF（甚至还有boykis",
           "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1825",
           "published": "2026-02-25 14:26"
@@ -17,11 +22,6 @@
           "title": "https://t.me/SecHorse/136946我发现我对便携性总有一种执念，能上PD全都上，电烙铁是正点原子T90B，数控电源是菲尼瑞斯DPS-150，加热台是嘉立创65瓦PD项目，包括目前",
           "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1824",
           "published": "2026-02-25 02:32"
-        },
-        {
-          "title": "https://dracofenrir.booth.pm/items/5740233自购，给自己的VRChat模型买了套衣服。是的没错，算是预告了，底模当然是 https://dracofenrir.",
-          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1823",
-          "published": "2026-02-25 01:55"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2026-02-26 01:01:31",
+      "last_checked": "2026-02-27 00:49:59",
       "online": true
     }
   ]
