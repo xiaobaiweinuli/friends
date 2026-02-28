@@ -9,19 +9,19 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
+          "title": "有件事忘了说，事实上我想训练自己的语音助手是因为Gemini关个灯要反应10秒，本地专用模型会快很多",
+          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1829",
+          "published": "2026-02-28 21:24"
+        },
+        {
+          "title": "这个项目本质上是一个基于 Go 语言和 Wails 框架开发的 Cloudflare Tunnel 桌面管理客户端",
+          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/121",
+          "published": "2026-02-28 12:55"
+        },
+        {
           "title": "S26U的蓝牙S Pen没有回归，期望落空，防窥屏其实我不是很感兴趣",
           "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1828",
           "published": "2026-02-26 17:59"
-        },
-        {
-          "title": "https://t.me/RikkaTiNew/1582攻击者卷土重来， @RikkaTiNew 关联群组 @Rikka_Ti 惨遭毒手，攻击者先用大量账号进群发一些正常的GIF（甚至还有boykis",
-          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1825",
-          "published": "2026-02-25 14:26"
-        },
-        {
-          "title": "https://t.me/SecHorse/136946我发现我对便携性总有一种执念，能上PD全都上，电烙铁是正点原子T90B，数控电源是菲尼瑞斯DPS-150，加热台是嘉立创65瓦PD项目，包括目前",
-          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1824",
-          "published": "2026-02-25 02:32"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2026-02-28 00:32:34",
+      "last_checked": "2026-03-01 00:18:06",
       "online": true
     }
   ]
