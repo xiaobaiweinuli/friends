@@ -9,6 +9,11 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
+          "title": "https://github.com/Valerian7/AI_JS_DEBUGGER",
+          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/137",
+          "published": "2026-03-08 15:55"
+        },
+        {
           "title": "你以为这个溢价已经是极限了？不不不还有更离谱的，思必驰M4会议麦克风带AI芯片支持语音转文本，官方售价400均价300某并夕夕店铺券后只要60，照样因为库存少就不细说了，我买的时候黑色已经缺货了，只有白色和粉色",
           "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1849",
           "published": "2026-03-07 01:53"
@@ -17,11 +22,6 @@
           "title": "国内技术论坛聚合 T00ls.Com网站：",
           "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/135",
           "published": "2026-03-07 01:08"
-        },
-        {
-          "title": "@kemono_AI 频道和群组已经被部分地区法律限制查看，目前已知英区（比如Giffgaff）和德国手机区号无法查看，唯一的办法是更换手机区号",
-          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1848",
-          "published": "2026-03-07 00:53"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2026-03-08 00:19:01",
+      "last_checked": "2026-03-09 00:19:45",
       "online": true
     }
   ]
