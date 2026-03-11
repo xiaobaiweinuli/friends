@@ -9,19 +9,19 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
+          "title": "March 9: Postponed endpoint access changes for existing integrationsAfter some review and feedback from the community, we have decided to postpone endpoint access changes for existing integrations. The Spotify Premium requirement, the authorized user cap and one Client ID per developer limit will take effect as planned for existing Development Mode integrations. We will share further details on updated timelines as soon as we're able to share more.Spotify现有已经创建的开发模式APP的政策变更推迟，新创建的APP已经应用新政策",
+          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1856",
+          "published": "2026-03-12 00:04"
+        },
+        {
+          "title": "刚刚我妈听讲座，里面有个人说其实小龙虾还是看人怎么用，就好比你让摄影新手用1万的相机，和让老手用5000的相机，哪个拍出来好，我觉得很有道理，小龙虾确实没什么意义，以前AutoGPT/AgentGPT配合EvilGPT火的时候怎么不玩，小龙虾怎么就能火起来，不觉得奇怪吗，纯粹炒作罢了，小龙虾打不过人工，AI是Copilot一直是这个道理，你真的理解LLM就发现实际上就是Function Calling硬塞，风头过去了一堆卸载，虽然授人以渔挣不到钱，授人以鱼好圈钱，但其实我从一开始就没研究过这玩意儿，所以我也不想授人以渔教你怎么安装和卸载，已经看穿本质了，没意思",
+          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1855",
+          "published": "2026-03-11 21:21"
+        },
+        {
           "title": "APP 重定向存储空间隔和 cleaner （不维护了）Namespace-ProxyStorage Redirect X",
           "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/139",
           "published": "2026-03-10 13:07"
-        },
-        {
-          "title": "你管这叫《never heard before》吗，看来这个AI点歌台还需要改进",
-          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1854",
-          "published": "2026-03-09 18:50"
-        },
-        {
-          "title": "#阅读 #网站 #新闻🆕 Buzzing - 用中文阅读世界各地的社交媒体在这个网站你可以用中文浏览国外社交媒体里的热门讨论，用母语快速导读， 感兴趣再进原文深度阅读➡️ 已收录至「新闻&阅读」📮投稿    📢频道    💬群聊    🔎索引",
-          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/138",
-          "published": "2026-03-09 18:25"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2026-03-11 00:50:12",
+      "last_checked": "2026-03-12 00:42:38",
       "online": true
     }
   ]
