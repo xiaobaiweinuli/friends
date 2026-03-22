@@ -9,19 +9,19 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
-          "title": "https://github.com/natesales/q",
-          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/142",
-          "published": "2026-03-21 20:59"
+          "title": "顺便说一下为什么智能家居的成品好用，我是去年刚入局智能家居的，也是事先做了一大堆功课，了解到国内就是米家Miot处于霸主地位，国外是Matter不过国内没多少厂商接入，所以我就逮着支持米家买，真的就是，开箱，开机，手机添加设备，搞定，没有复杂的配置环节，设备直接连入广域网，需要蓝牙网关也会自动连入，跨越半个地球也能通过Miot服务器控制，不过米家接入Home Assistant需要一些操作，这里就不赘述了",
+          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1870",
+          "published": "2026-03-22 01:28"
         },
         {
-          "title": "某杂牌桌面充坏了，目前情况是只有C1口正常，C2、C3、C4功率屏显故障，一直0W，A1、A2口没输出，我是去年11月24日开始用的，半年不到就坏了，日常使用场景是全部插满，因为设备比较多，有几台一直插电进行涓流充电，前几天出门了一趟，回来就这样了，当时的负载其实并不高，坏的挺莫名其妙的，好在并夕夕可以全额退货退款，果然便宜到离谱的货还是不能买，即便这东西有3C认证",
-          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1868",
-          "published": "2026-03-21 18:00"
+          "title": "可能很多人以为电子DIY可以省下一大笔钱，其实不然，初期要花费大量的费用去购买装备和电子元件耗材，你省下的可能只是组装人工费和溢价，长期下来可能会回本，而且毕竟是自己在家做的，使用体验其实不如工厂做出来的成品产品",
+          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1869",
+          "published": "2026-03-22 01:08"
         },
         {
-          "title": "不知道说什么好，最近怎么了？",
-          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1867",
-          "published": "2026-03-21 14:53"
+          "title": "#ssh工具xterminaltermiusAechotermelectermaterminalfinalshelltabby",
+          "link": "https://tg.xingshuang.xyz/posts/NavCollect/65",
+          "published": "2026-03-22 00:52"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2026-03-22 00:20:35",
+      "last_checked": "2026-03-23 00:20:59",
       "online": true
     }
   ]
