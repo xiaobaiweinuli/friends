@@ -9,19 +9,19 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
-          "title": "顺便说一下为什么智能家居的成品好用，我是去年刚入局智能家居的，也是事先做了一大堆功课，了解到国内就是米家Miot处于霸主地位，国外是Matter不过国内没多少厂商接入，所以我就逮着支持米家买，真的就是，开箱，开机，手机添加设备，搞定，没有复杂的配置环节，设备直接连入广域网，需要蓝牙网关也会自动连入，跨越半个地球也能通过Miot服务器控制，不过米家接入Home Assistant需要一些操作，这里就不赘述了",
-          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1870",
-          "published": "2026-03-22 01:28"
+          "title": "#麦克风电脑上利用手机收音MicYouwomic",
+          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/144",
+          "published": "2026-03-23 18:08"
         },
         {
-          "title": "可能很多人以为电子DIY可以省下一大笔钱，其实不然，初期要花费大量的费用去购买装备和电子元件耗材，你省下的可能只是组装人工费和溢价，长期下来可能会回本，而且毕竟是自己在家做的，使用体验其实不如工厂做出来的成品产品",
-          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1869",
-          "published": "2026-03-22 01:08"
+          "title": "我目前无法邀请别人，我的邀请按钮消失了，貌似不是关闭邀请了，而是我的账号触发了上限，我找不到help的邮箱，只能发帖求助了",
+          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1871",
+          "published": "2026-03-23 15:54"
         },
         {
-          "title": "#ssh工具xterminaltermiusAechotermelectermaterminalfinalshelltabby",
-          "link": "https://tg.xingshuang.xyz/posts/NavCollect/65",
-          "published": "2026-03-22 00:52"
+          "title": "威软夸克助手",
+          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/143",
+          "published": "2026-03-23 12:16"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2026-03-23 00:20:59",
+      "last_checked": "2026-03-24 00:50:23",
       "online": true
     }
   ]
