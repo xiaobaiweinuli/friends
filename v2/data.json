@@ -9,11 +9,6 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
-          "title": "#shortx logcat包含匹配暗屏BrightnessEvent.*displayPolicy=DIM暗屏 > 亮屏BrightnessEvent.*displayPolicy=BRIGHT.*reason=automatic",
-          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/145",
-          "published": "2026-04-01 00:01"
-        },
-        {
           "title": "知道今天是4月1日愚人节，肯定会有很多人跟你开玩笑，骗你说喜欢你，但我不一样，我这人向来真诚，不屑于玩那些无聊的把戏，所以我不骗你",
           "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1877",
           "published": "2026-04-01 00:00"
@@ -22,6 +17,11 @@
           "title": "用了一个星期，大概说一下使用体验，我买的是160瓦的版本，入手价格是231CNY，给我的体验没有之前那个127CNY的好，还贵了一倍，也不能说惨不忍睹，有牌子的产品在这个价位已经算性价比很高了，具体看图，协议之前测过了，之后测了一下充电曲线，PD65瓦充1小时，温度稳定在40℃，还是可以的，本来想放充电曲线的，结果KM003C固件更新2.0.0给我机器上的数据清空了，反正65瓦的功率下1小时一条直线没掉速，缺点很明显，产品介绍最高160瓦，实际上4个C口最大100瓦加上4个A口最大60瓦，单口只有100瓦跑不到140瓦，也算是文字游戏了，在插满的情况下，4个口平分，也就是25瓦，3个口是各30瓦，2个口各45瓦，没有正常激活三星PPS，这个其实很正常毕竟很多充电器都做不好，然后接口插拔会断连重新分配功率协议，甚至只插一个口也会莫名其妙断连一下然后分配协议，这是我买的我见过的全部充电宝充电器里面没有过的情况，比较诡异，对我来说，如果我和之前那个比，给我的感觉是不满意的，所以我在考虑要不要退货换之前那个",
           "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1872",
           "published": "2026-03-31 16:16"
+        },
+        {
+          "title": "#麦克风电脑上利用手机收音MicYouwomic",
+          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/144",
+          "published": "2026-03-23 18:08"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2026-04-01 00:50:44",
+      "last_checked": "2026-04-02 00:45:07",
       "online": true
     }
   ]
