@@ -9,6 +9,11 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
+          "title": "你可能注意到群组的头像和简介变得很奇怪，稍安勿躁，是我们干的，有个人找我们说他有办法解封，你和我们想的一样对吧，不过别担心，一切都在掌握之中，我们什么敏感权限都不会给他，我们依旧100%掌握群组所有权",
+          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1885",
+          "published": "2026-04-10 19:59"
+        },
+        {
           "title": "最近发现了个好玩的东西，盒马2.13英寸墨水屏价签，主要是很便宜，买微雪2.13英寸要50元一块裸屏，这个2.5元一个，我一看这不是标准的24pin FPC接口吗？我直接买了30个，其实本来也不想买这么多，关键是拆了好几个，我是拿超薄钢锯片切开的外壳，折磨了好久的电磨笔，结果全是热压焊，屏幕拆不了，让卖家包了10个拆好的带接口座的，4元一个，所以其实量大的有2种板型，量少的话京东支付也搞过这种价签，如果你要用树莓派Pico，乐鑫ESP32，Arduino UNO，意法半导体STM32这种单片机去带，就记得让卖家挑拆开的是接口座的板型，如果你要折腾上面的瑞萨斯DA14585单片机，那两种板型没区别，DA14585我看了资料令我两眼亿黑，有点难折腾，先鸽了，不过这个单片机网上已经有很多资料了，这次用ESP32+MicroPython驱动，买了几个墨水屏驱动板，9元一个，是的，驱动板比屏幕都贵",
           "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1879",
           "published": "2026-04-03 02:47"
@@ -17,11 +22,6 @@
           "title": "https://t.me/monogram_android/71https://t.me/monogram_android/74这就是为什么我不分享任何Telegram第三方客户端，网络安全学里面有个",
           "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1878",
           "published": "2026-04-02 22:40"
-        },
-        {
-          "title": "知道今天是4月1日愚人节，肯定会有很多人跟你开玩笑，骗你说喜欢你，但我不一样，我这人向来真诚，不屑于玩那些无聊的把戏，所以我不骗你",
-          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1877",
-          "published": "2026-04-01 00:00"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2026-04-10 00:59:13",
+      "last_checked": "2026-04-11 00:42:04",
       "online": true
     }
   ]
