@@ -9,6 +9,11 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
+          "title": "https://t.me/SamMobileNews/23714Galaxy Connect已经支持非三星电脑，不需要任何伪装，而且解决了伪装出现的一些问题。包括电脑与电脑之间的剪贴板同步，现在可以在",
+          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1901",
+          "published": "2026-04-22 16:39"
+        },
+        {
           "title": "路由器参数查询网 mao.fan 疑似爆了个P0级别的漏洞",
           "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1900",
           "published": "2026-04-21 03:28"
@@ -17,11 +22,6 @@
           "title": "(Kemoket 12) [Namachi] 连结攻势 (コネクトリンクぜめ) [Chinese]",
           "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1899",
           "published": "2026-04-21 02:44"
-        },
-        {
-          "title": "现在我的随身工具都变成扁的了，可以轻松塞进米家挎包而不会凸起，至于为什么买米家挎包，其实是不知道选哪个好，小米的东西比较有质量保障",
-          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1895",
-          "published": "2026-04-20 01:11"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2026-04-22 00:51:54",
+      "last_checked": "2026-04-23 00:51:46",
       "online": true
     }
   ]
