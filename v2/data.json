@@ -9,6 +9,11 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
+          "title": "https://eh.zgqinc.gq/我算是阅本无数，喜欢的本子都会下载，之前老是有朋友让我给他推荐一些本子，我一直是ls命令直接甩个文件夹列表给他，就很不直观，所以做了个个人收藏集浏览器，不是每",
+          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1902",
+          "published": "2026-04-28 00:12"
+        },
+        {
           "title": "第三方客户端个人评价时隔多天，咱们频道主这个大鸽子算是把这篇文章鸽出来了，希望各位批评的时候稍微轻点（非常抱歉鸽子了这么久😣😣😣😣😣转载请携带来源（）4.18更新：修改4处文本错误，新增TGX UI演示图",
           "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/166",
           "published": "2026-04-25 03:31"
@@ -16,11 +21,6 @@
         {
           "title": "#GitHub #Andorid #Mac #Windows #App📱 Android ADB 桌面应用 —— AYA👩‍💻 AYA 是一个用于简化对安卓设备操作控制的桌面应用程序，可以看作是 ADB 的图形用户界面",
           "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/165",
-          "published": "2026-04-25 03:27"
-        },
-        {
-          "title": "https://github.com/DP-Hridayan/aShellYou一个简洁美观的 ADB 工具 基于 Material Design 3 支持普通 ADB ROOT Shizuku 无线",
-          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/164",
           "published": "2026-04-25 03:27"
         }
       ],
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2026-04-27 00:34:30",
+      "last_checked": "2026-04-29 01:41:09",
       "online": true
     }
   ]
