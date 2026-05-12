@@ -9,19 +9,19 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
+          "title": "DenuvOwO团队发布声明：viewtopic.php?p=3507952#p3507952 This does not belong to us and has a different steam_settings folder belonging to GameDrive, which you can see from the very different steam_settings folder, and even the configs_main.ini.We've put out no such crackfix. Our crack works perfectly. If the game is crashing for anyone, that's because they're using the files on top of GameDrive's release, which replaced the original steam_api64.dll with a patched one, triggering the anti-tamper leading to crashes.Our only release at the moment is the one in the message. They can get the original steam_api.64.dll from this link:",
+          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1908",
+          "published": "2026-05-12 05:29"
+        },
+        {
+          "title": "https://t.me/zaihuapd/41329?comment=92011最近网上流出号称不需要登录Xbox账号的地平线6补丁，很明显是不可能的，疑似夹带私货，发布此补丁的网站声称是Denuv",
+          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1906",
+          "published": "2026-05-12 02:41"
+        },
+        {
           "title": "众所周知Voices38最近破解了黑猴子、生化危机安魂曲、剑星，然后我不知道为什么到现在还有这么多人觉得这些所谓的破解是把Denuvo彻底干掉或者字节级别的移除了，包括当年吹得神乎其神的女皇EMPRESS方案，以为是把那几百万行混淆过的加密代码给一行行删了，甚至刚刚有人在顾虑还会不会影响性能",
           "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1905",
           "published": "2026-05-09 21:13"
-        },
-        {
-          "title": "https://t.me/RikkaTiNew/1598只能开新群了。没有套出有用的信息，事实上我们怀疑炸群和解封的是一帮人，这是一场有组织有预谋的团伙作案，甚至被封当天就有人找群组所有者提出几百美金",
-          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1904",
-          "published": "2026-05-09 15:52"
-        },
-        {
-          "title": "正点原子S40电动螺丝刀的功能、内部结构全在这了 UP主: 硬核拆解 -",
-          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1903",
-          "published": "2026-05-07 01:20"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2026-05-12 01:49:43",
+      "last_checked": "2026-05-13 01:53:38",
       "online": true
     }
   ]
