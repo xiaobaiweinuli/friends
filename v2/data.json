@@ -9,6 +9,11 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
+          "title": "经提醒，目前推特不需要Play Integrity为STRONG了，BASIC也能登录，先别急着高兴，截至版本11.90.1，PairIP依旧存在，所以依旧需要GMS，需要去谷歌商店安装，甚至不能使用修改版，所谓的窗口期已经不复存在",
+          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1912",
+          "published": "2026-05-16 22:34"
+        },
+        {
           "title": "主播塞PVE里面的睿储16G SODIMM DDR4 3200MHz CL22镁光颗粒内存条炸了，还是在这个时候，闲鱼买的，淘宝终身质保，卖家联系客服，客服也有点耍赖的意思，也算意料之中了，要不是内存涨成这样也不会买睿储这种杂牌，搞不好痛失400CNY",
           "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1911",
           "published": "2026-05-15 16:35"
@@ -17,11 +22,6 @@
           "title": "https://www.war.gov/UFO/五角大楼应Presidential Unsealing and Reporting System for UAP Encounters（PURSUE法案",
           "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1910",
           "published": "2026-05-14 04:28"
-        },
-        {
-          "title": "https://newsroom.spotify.com/spotify20/Spotify二十周年庆，推出了限定活动Your Party Of The Year(s)，不过应该包括我在内的大部分人第",
-          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1909",
-          "published": "2026-05-13 21:41"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2026-05-16 01:22:43",
+      "last_checked": "2026-05-17 00:49:46",
       "online": true
     }
   ]
