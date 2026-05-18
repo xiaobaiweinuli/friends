@@ -9,6 +9,11 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
+          "title": "https://t.me/geekshare/6871",
+          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1919",
+          "published": "2026-05-18 18:56"
+        },
+        {
           "title": "最近换了键盘鼠标",
           "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1913",
           "published": "2026-05-17 21:30"
@@ -17,11 +22,6 @@
           "title": "https://github.com/Silentely/eSIM-Tools",
           "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/170",
           "published": "2026-05-17 16:46"
-        },
-        {
-          "title": "🔤🔤🔤🔤🌐的七宗罪：- 默认捆绑大肆推广强迫推销- 石山代码性能不稳定- 天天偷导数据，隐私问题突出- 增加“Bloat”(Bing)，功能冗余- 易干扰用户选择的反人类设计- 多余的 AI 功能- 傻逼游戏助手建议一般用户保留WebView，因为Windows “照片”应用的编辑功能本质是浏览器（没想到吧），依赖WebView",
-          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/167",
-          "published": "2026-05-17 02:01"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2026-05-18 00:48:49",
+      "last_checked": "2026-05-19 01:53:24",
       "online": true
     }
   ]
