@@ -9,6 +9,11 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
+          "title": "https://t.me/xriprepo/5看到这个相信你也明白发生什么了，能出包大概率用了过签技术，具体用的什么工具就别细究了，而且如果你有root，也可以自己注入jar，随便绕过随便替换，这里主",
+          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1920",
+          "published": "2026-05-19 02:10"
+        },
+        {
           "title": "https://t.me/geekshare/6871",
           "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1919",
           "published": "2026-05-18 18:56"
@@ -17,11 +22,6 @@
           "title": "最近换了键盘鼠标",
           "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1913",
           "published": "2026-05-17 21:30"
-        },
-        {
-          "title": "https://github.com/Silentely/eSIM-Tools",
-          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/170",
-          "published": "2026-05-17 16:46"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2026-05-19 01:53:24",
+      "last_checked": "2026-05-20 01:58:53",
       "online": true
     }
   ]
