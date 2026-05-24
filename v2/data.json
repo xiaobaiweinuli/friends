@@ -9,19 +9,19 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
-          "title": "520，对象送了台小米智能家庭屏Pro8，至于为什么买这种垃圾性能产品，纯粹是因为买了个米家智能香氛机然后这玩意儿需要蓝牙Mesh网关才能接入广域网，被Miot折磨一个星期都没能用Home Assistant主机的蓝牙代理上，我都不好说米家生态算封闭还是开放，然后单独买个网关又觉得鸡肋，干脆买个娱乐屏+Home Assistant中控屏+智能音箱+蓝牙Mesh网关四合一的吧，就变成现在这个了，485入手，然后司马小米日常堵死刷机方法，不得不再掏出180找人刷机root扩容128G",
-          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1922",
-          "published": "2026-05-23 01:43"
+          "title": "https://t.me/xhqcankao/29564我也一直在劝大家不要用APKPure，预言再次成真，原话我已经说过无数遍了：被腾讯收购完被虎牙收购，现在一堆垃圾软件。而且之前就被发现有人投毒，",
+          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1923",
+          "published": "2026-05-24 18:03"
         },
         {
-          "title": "关于被邮件通知重新验证，有没有方法通过；现在创建一个新号，还能不能白嫖",
-          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1921",
-          "published": "2026-05-20 15:49"
+          "title": "#Android #SIM #eSIM## SIM",
+          "link": "https://tg.xingshuang.xyz/posts/NavCollect/71",
+          "published": "2026-05-24 01:12"
         },
         {
-          "title": "https://t.me/xriprepo/5看到这个相信你也明白发生什么了，能出包大概率用了过签技术，具体用的什么工具就别细究了，而且如果你有root，也可以自己注入jar，随便绕过随便替换，这里主",
-          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1920",
-          "published": "2026-05-19 02:10"
+          "title": "#Android #termux #codex需要 Termux 里的本地 Codex 后端",
+          "link": "https://tg.xingshuang.xyz/posts/NavCollect/70",
+          "published": "2026-05-24 01:05"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2026-05-24 00:52:27",
+      "last_checked": "2026-05-25 00:54:08",
       "online": true
     }
   ]
