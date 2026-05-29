@@ -9,6 +9,11 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
+          "title": "#小知识Tips：任务管理器的进程界面，按住 CTRL 可以实时暂停（松开恢复），此时你可以慢慢查看被暂停那一刻的进程列表而不必拼手速",
+          "link": "https://tg.xingshuang.xyz/posts/NavCollect/72",
+          "published": "2026-05-29 10:01"
+        },
+        {
           "title": "Firefox新吉祥物Kit贴纸包 动态版🎬🎬🎬🎬🎬🎬🎬🎬🎬🎬🎬🎬🎬🎬🎬🎬🎬Stickers:",
           "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1925",
           "published": "2026-05-25 22:05"
@@ -17,11 +22,6 @@
           "title": "五角大楼放出了第二批文件",
           "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1924",
           "published": "2026-05-25 06:21"
-        },
-        {
-          "title": "https://t.me/xhqcankao/29564我也一直在劝大家不要用APKPure，预言再次成真，原话我已经说过无数遍了：被腾讯收购完被虎牙收购，现在一堆垃圾软件。而且之前就被发现有人投毒，",
-          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1923",
-          "published": "2026-05-24 18:03"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2026-05-29 02:30:21",
+      "last_checked": "2026-05-30 02:27:22",
       "online": true
     }
   ]
