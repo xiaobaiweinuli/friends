@@ -9,19 +9,19 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
+          "title": "我忘了在哪些群说过如何刷拼多多券 注1",
+          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/175",
+          "published": "2026-05-31 16:25"
+        },
+        {
+          "title": "频道导航｜精选合集索引做了不少实用整理，欢迎转发",
+          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/174",
+          "published": "2026-05-31 16:25"
+        },
+        {
           "title": "#小知识Tips：任务管理器的进程界面，按住 CTRL 可以实时暂停（松开恢复），此时你可以慢慢查看被暂停那一刻的进程列表而不必拼手速",
           "link": "https://tg.xingshuang.xyz/posts/NavCollect/72",
           "published": "2026-05-29 10:01"
-        },
-        {
-          "title": "Firefox新吉祥物Kit贴纸包 动态版🎬🎬🎬🎬🎬🎬🎬🎬🎬🎬🎬🎬🎬🎬🎬🎬🎬Stickers:",
-          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1925",
-          "published": "2026-05-25 22:05"
-        },
-        {
-          "title": "五角大楼放出了第二批文件",
-          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1924",
-          "published": "2026-05-25 06:21"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2026-05-31 00:53:47",
+      "last_checked": "2026-06-01 00:58:48",
       "online": true
     }
   ]
