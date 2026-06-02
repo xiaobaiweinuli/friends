@@ -9,6 +9,11 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
+          "title": "#小知识红米手机缺电解决方法",
+          "link": "https://tg.xingshuang.xyz/posts/NavCollect/73",
+          "published": "2026-06-02 18:03"
+        },
+        {
           "title": "我忘了在哪些群说过如何刷拼多多券 注1",
           "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/175",
           "published": "2026-05-31 16:25"
@@ -17,11 +22,6 @@
           "title": "频道导航｜精选合集索引做了不少实用整理，欢迎转发",
           "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/174",
           "published": "2026-05-31 16:25"
-        },
-        {
-          "title": "#小知识Tips：任务管理器的进程界面，按住 CTRL 可以实时暂停（松开恢复），此时你可以慢慢查看被暂停那一刻的进程列表而不必拼手速",
-          "link": "https://tg.xingshuang.xyz/posts/NavCollect/72",
-          "published": "2026-05-29 10:01"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2026-06-02 04:11:33",
+      "last_checked": "2026-06-03 03:36:48",
       "online": true
     }
   ]
