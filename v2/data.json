@@ -9,6 +9,11 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
+          "title": "https://github.com/sky22333/skyadb",
+          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/176",
+          "published": "2026-06-03 11:05"
+        },
+        {
           "title": "#小知识红米手机缺电解决方法",
           "link": "https://tg.xingshuang.xyz/posts/NavCollect/73",
           "published": "2026-06-02 18:03"
@@ -16,11 +21,6 @@
         {
           "title": "我忘了在哪些群说过如何刷拼多多券 注1",
           "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/175",
-          "published": "2026-05-31 16:25"
-        },
-        {
-          "title": "频道导航｜精选合集索引做了不少实用整理，欢迎转发",
-          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/174",
           "published": "2026-05-31 16:25"
         }
       ],
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2026-06-03 03:36:48",
+      "last_checked": "2026-06-04 03:42:20",
       "online": true
     }
   ]
