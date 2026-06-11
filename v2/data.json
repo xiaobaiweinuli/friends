@@ -9,6 +9,11 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
+          "title": "填报志愿可以参考以下的网站大学生活质量指北",
+          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/179",
+          "published": "2026-06-11 16:53"
+        },
+        {
           "title": "gog-games.to 将会在9月6日下线且已经停止一切活动，据站长所述，自己没有被DMCA干，只是个人决定",
           "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1929",
           "published": "2026-06-09 21:51"
@@ -17,11 +22,6 @@
           "title": "#小知识服务】->【钱包】->【客服中心】-> 常用工具 -> 右下方【消费者保护】-> 选择【隐私保护】-> 支付后摇一摇设置中选择关闭营销推送服务",
           "link": "https://tg.xingshuang.xyz/posts/NavCollect/74",
           "published": "2026-06-08 15:27"
-        },
-        {
-          "title": "海豚源    TG 群：",
-          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/178",
-          "published": "2026-06-08 15:18"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2026-06-11 02:25:16",
+      "last_checked": "2026-06-12 02:41:49",
       "online": true
     }
   ]
