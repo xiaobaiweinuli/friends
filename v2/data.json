@@ -9,6 +9,11 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
+          "title": "#穿透 #隧道tailscaleCloudflare Zero TrustCloudflare TunnelZeroTier OneAstral",
+          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/180",
+          "published": "2026-06-14 15:32"
+        },
+        {
           "title": "第三批了",
           "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1930",
           "published": "2026-06-13 15:23"
@@ -17,11 +22,6 @@
           "title": "填报志愿可以参考以下的网站大学生活质量指北",
           "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/179",
           "published": "2026-06-11 16:53"
-        },
-        {
-          "title": "gog-games.to 将会在9月6日下线且已经停止一切活动，据站长所述，自己没有被DMCA干，只是个人决定",
-          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1929",
-          "published": "2026-06-09 21:51"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2026-06-14 01:14:39",
+      "last_checked": "2026-06-15 01:12:16",
       "online": true
     }
   ]
