@@ -9,6 +9,11 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
+          "title": "Spotify API又有变更了",
+          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1934",
+          "published": "2026-06-18 16:33"
+        },
+        {
           "title": "我的S22 Ultra不会获得OneUI 8.5更新",
           "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1933",
           "published": "2026-06-17 21:19"
@@ -17,11 +22,6 @@
           "title": "半自动硫磺史莱姆飞天雪橇发射台",
           "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1931",
           "published": "2026-06-16 01:33"
-        },
-        {
-          "title": "🖥 #网址 #系统 #系统激活KMS一键激活Windows",
-          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/185",
-          "published": "2026-06-15 21:32"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2026-06-18 02:09:09",
+      "last_checked": "2026-06-19 02:22:19",
       "online": true
     }
   ]
