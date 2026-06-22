@@ -9,19 +9,19 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
-          "title": "请输入文本",
-          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1936",
-          "published": "2026-06-20 07:29"
+          "title": "应站长要求，目前不会公开任何信息，你需要做的只是等待",
+          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1940",
+          "published": "2026-06-22 18:46"
         },
         {
-          "title": "https://youtu.be/PVy-bcTsO8A",
-          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1935",
-          "published": "2026-06-20 05:57"
+          "title": "https://github.com/power721/alist-tvbox",
+          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/186",
+          "published": "2026-06-22 14:44"
         },
         {
-          "title": "Spotify API又有变更了",
-          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1934",
-          "published": "2026-06-18 16:33"
+          "title": "极光/水波纹氛围灯通过MicroPython+MQTT Broker接入Home Assistant",
+          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1937",
+          "published": "2026-06-22 02:49"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2026-06-22 01:20:45",
+      "last_checked": "2026-06-23 03:18:50",
       "online": true
     }
   ]
