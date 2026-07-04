@@ -9,6 +9,11 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
+          "title": "和朋友一起去看了《后室》，也是好久没去电影院看电影了，我一开始没怎么看懂，又不能跳回去再看一遍，这也是我不喜欢电影院的一个点，这部有个多了16分钟的第一人称VHS加长版目前没上映，没看到有点可惜，只能等数字版了",
+          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1949",
+          "published": "2026-07-05 00:23"
+        },
+        {
           "title": "https://12306.cjh0613.com/zh/free-refund12306免费退票助手这个工具可以免费退12306火车票，无需支付退票费。不需要提供任何敏感资料如账号密码。它提供说明，",
           "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/190",
           "published": "2026-07-01 18:25"
@@ -16,11 +21,6 @@
         {
           "title": "#Windows #工具✨ 将浏览器式的流畅滚屏体验带到 Windows 的每一个角落：FlowWheel⬇️ 下载页面这是一个专注全局平滑自动滚屏的 Windows 工具，用鼠标中键拖拽即可实现物理惯性滚动，支持多屏协同、自定义加速度曲线等功能效果还不错呀~📮投稿    📢频道    💬吹水    🌐网站",
           "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/189",
-          "published": "2026-07-01 11:17"
-        },
-        {
-          "title": "#开源 #建站🔨 WebUtils - 内置 1000+ 个纯前端在线工具网站🌐 在线演示这个是我见过最全面的开源工具站，涵盖开发调试、时间日期、媒体处理、设计工具、加密哈希、文本处理等各种领域",
-          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/188",
           "published": "2026-07-01 11:17"
         }
       ],
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2026-07-04 01:15:53",
+      "last_checked": "2026-07-05 00:55:49",
       "online": true
     }
   ]
