@@ -9,19 +9,19 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
+          "title": "💻RepairBadTweaks：专治被各种系统优化/精简搞坏的 Windows 修复工具“随着调整Windows变得越来越流行，自称专家的人往往错误地解读微软文档和其他来源",
+          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/191",
+          "published": "2026-07-07 22:24"
+        },
+        {
+          "title": "https://t.me/appinnfeed/17326Win11的CapabilityAccessManager的bug目前记录到会产生513GB的日志在数据库，已经在6月底的KB5095093补",
+          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1951",
+          "published": "2026-07-07 21:41"
+        },
+        {
           "title": "😃😢😚👍😭😄😏😘離姬 - BanarehimeStickers：",
           "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1950",
           "published": "2026-07-06 17:31"
-        },
-        {
-          "title": "和朋友一起去看了《后室》，也是好久没去电影院看电影了，我一开始没怎么看懂，又不能跳回去再看一遍，这也是我不喜欢电影院的一个点，这部有个多了16分钟的第一人称VHS加长版目前没上映，没看到有点可惜，只能等数字版了",
-          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1949",
-          "published": "2026-07-05 00:23"
-        },
-        {
-          "title": "https://12306.cjh0613.com/zh/free-refund12306免费退票助手这个工具可以免费退12306火车票，无需支付退票费。不需要提供任何敏感资料如账号密码。它提供说明，",
-          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/190",
-          "published": "2026-07-01 18:25"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2026-07-07 02:05:54",
+      "last_checked": "2026-07-08 01:53:01",
       "online": true
     }
   ]
