@@ -9,19 +9,19 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
+          "title": "新国标的力度不是很严，过了一周多暂时没看到有市场巡查下来，上面这些目前还是买得到一些的，可以去闲鱼碰碰运气，毕竟造了这么多都销毁不太可能，偷偷卖还是可以的，就和Qi2.2和航空频段冲突一样也没严管",
+          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1954",
+          "published": "2026-07-10 00:54"
+        },
+        {
+          "title": "https://t.me/pokemon_love",
+          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/192",
+          "published": "2026-07-09 11:03"
+        },
+        {
           "title": "你和我被送了一年推特的Premium+？大概率几天后会收回，搞不好封号",
           "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1952",
           "published": "2026-07-08 10:46"
-        },
-        {
-          "title": "💻RepairBadTweaks：专治被各种系统优化/精简搞坏的 Windows 修复工具“随着调整Windows变得越来越流行，自称专家的人往往错误地解读微软文档和其他来源",
-          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/191",
-          "published": "2026-07-07 22:24"
-        },
-        {
-          "title": "https://t.me/appinnfeed/17326Win11的CapabilityAccessManager的bug目前记录到会产生513GB的日志在数据库，已经在6月底的KB5095093补",
-          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1951",
-          "published": "2026-07-07 21:41"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2026-07-09 01:21:33",
+      "last_checked": "2026-07-10 01:48:47",
       "online": true
     }
   ]
