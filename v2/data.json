@@ -9,6 +9,11 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
+          "title": "购买并夕夕的廉价外设产品需谨慎，主播的PVE迷你主机差点又坏了，还好排查下来只是电源适配器坏了",
+          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1958",
+          "published": "2026-07-14 17:59"
+        },
+        {
           "title": "我已经被收回，看来有2个月的缓冲期",
           "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1957",
           "published": "2026-07-13 16:01"
@@ -17,11 +22,6 @@
           "title": "https://t.me/ZGQinc_chat_room/68579后室加长片段泄露，前15分钟有高清的DCP，最后一分钟貌似版权原因放不出来，只有枪版，这个加长片段大概率会在电影下映后免费出现在K",
           "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1956",
           "published": "2026-07-12 03:43"
-        },
-        {
-          "title": "https://appnetica.com/games?publication_type=nb905bjgb4rd4vo新站点平替，里面也有少量Steam游戏，太少了没意思，数据库管理工具重点抓取GO",
-          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1955",
-          "published": "2026-07-11 05:40"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2026-07-14 01:49:17",
+      "last_checked": "2026-07-15 01:05:38",
       "online": true
     }
   ]
