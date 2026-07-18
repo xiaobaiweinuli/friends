@@ -9,6 +9,11 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
+          "title": "学生认证基本上不用想了，现在有2种活动，一种是Pixel，另一种是印度Jio，网上都有卖，6.6~18元，如果你不介意花点小钱可以尝试，但是我不满靠这个圈钱，之前捣鼓出学生认证的免费方案也是因为这个原因",
+          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1959",
+          "published": "2026-07-18 19:54"
+        },
+        {
           "title": "#AndroidStudio #TRAE插件 #虚拟化## 一、 TRAE 插件引起的 JCEF 依赖冲突处理如果在安装 TRAE 插件后遇到环境报错或显示异常，请按以下步骤依次排查：### 1. 解决 JCEF 依赖冲突 * 使用快捷键 Ctrl + Shift + A 打开“查找操作”面板",
           "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/193",
           "published": "2026-07-17 15:21"
@@ -17,11 +22,6 @@
           "title": "购买并夕夕的廉价外设产品需谨慎，主播的PVE迷你主机差点又坏了，还好排查下来只是电源适配器坏了",
           "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1958",
           "published": "2026-07-14 17:59"
-        },
-        {
-          "title": "我已经被收回，看来有2个月的缓冲期",
-          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1957",
-          "published": "2026-07-13 16:01"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2026-07-18 01:03:25",
+      "last_checked": "2026-07-19 00:47:19",
       "online": true
     }
   ]
