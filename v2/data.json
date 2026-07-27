@@ -9,19 +9,19 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
+          "title": "已从GalaxyBookEnabler获得灵感，做了个GalaxyBookMask升级版，支持解锁更多三星应用并自动添加到Startup文件夹，开机自动运行脚本，一劳永逸",
+          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1968",
+          "published": "2026-07-27 15:09"
+        },
+        {
+          "title": "已从GalaxyBookEnabler获得灵感，做了个GalaxyBookMask升级版，支持解锁更多三星应用并自动添加到Startup文件夹，开机自动运行脚本，一劳永逸",
+          "link": "https://tg.xingshuang.xyz/posts/ZGQincLiqun/3513",
+          "published": "2026-07-27 15:08"
+        },
+        {
           "title": "https://browser.samsung.com/beta憋了2年的三星浏览器PC版开启内测，因为仅韩国和美国账号可加入Beta计划，所以这里提供安装包。",
           "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1966",
           "published": "2026-07-22 23:32"
-        },
-        {
-          "title": "https://browser.samsung.com/beta憋了2年的三星浏览器PC版开启内测，因为仅韩国和美国账号可加入Beta计划，所以这里提供安装包。",
-          "link": "https://tg.xingshuang.xyz/posts/ZGQincLiqun/3511",
-          "published": "2026-07-22 23:32"
-        },
-        {
-          "title": "PDF文件三星笔记文件谷歌商店这次夏促游戏的折扣数量破纪录了，虽然以前也有10份以上但是折扣力度不够大，从AppSales整理了一份列表，纯文本在评论区",
-          "link": "https://tg.xingshuang.xyz/posts/ZGQincLiqun/3508",
-          "published": "2026-07-20 14:27"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2026-07-27 00:50:51",
+      "last_checked": "2026-07-28 01:36:53",
       "online": true
     }
   ]
