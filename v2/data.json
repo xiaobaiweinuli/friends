@@ -9,19 +9,19 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
+          "title": "一些绅士黄油的集合点，有应用、游戏、漫画等，大部分游戏资源要用百度网盘下载",
+          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1969",
+          "published": "2026-07-31 23:05"
+        },
+        {
+          "title": "一些绅士黄油的集合点，有应用、游戏、漫画等，大部分游戏资源要用百度网盘下载",
+          "link": "https://tg.xingshuang.xyz/posts/ZGQincLiqun/3514",
+          "published": "2026-07-31 23:04"
+        },
+        {
           "title": "已从GalaxyBookEnabler获得灵感，做了个GalaxyBookMask升级版，支持解锁更多三星应用并自动添加到Startup文件夹，开机自动运行脚本，一劳永逸",
           "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1968",
           "published": "2026-07-27 15:09"
-        },
-        {
-          "title": "已从GalaxyBookEnabler获得灵感，做了个GalaxyBookMask升级版，支持解锁更多三星应用并自动添加到Startup文件夹，开机自动运行脚本，一劳永逸",
-          "link": "https://tg.xingshuang.xyz/posts/ZGQincLiqun/3513",
-          "published": "2026-07-27 15:08"
-        },
-        {
-          "title": "https://browser.samsung.com/beta憋了2年的三星浏览器PC版开启内测，因为仅韩国和美国账号可加入Beta计划，所以这里提供安装包。",
-          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/1966",
-          "published": "2026-07-22 23:32"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2026-07-31 01:17:25",
+      "last_checked": "2026-08-01 01:21:15",
       "online": true
     }
   ]
