@@ -9,19 +9,19 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
+          "title": "https://blog.zgqinc.gq/posts/transition-announcement/",
+          "link": "https://tg.xingshuang.xyz/posts/ZGQincLiqun/3582",
+          "published": "2026-08-14 03:17"
+        },
+        {
+          "title": "https://blog.zgqinc.gq/posts/transition-announcement/",
+          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/2037",
+          "published": "2026-08-14 03:14"
+        },
+        {
           "title": "https://t.me/CopyRightZGQInc/2035",
           "link": "https://tg.xingshuang.xyz/posts/ZGQincLiqun/3581",
           "published": "2026-08-12 09:52"
-        },
-        {
-          "title": "群组重新关联",
-          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/2036",
-          "published": "2026-08-12 09:46"
-        },
-        {
-          "title": "我频道回来了，我对这个结果并不感到惊讶，当我看到APP喵频道回来的时候，我就意识到我的也稳了，想要做到这一点很简单，给GDPR发举报信说明TG处理用户请求时不作为，举报信抄送一份给Telegram达到威慑目的，官方怕GDPR，之前被苹果下架，这次搞不好在欧盟下架，肯定会管，我看到官方是把骗子账号强制注销了，说明官方已经在处理tdata盗号事件了，其他人被盗也可以看一下自己的频道，重新加入就会变成所有者",
-          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/2035",
-          "published": "2026-08-12 09:29"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2026-08-14 00:47:08",
+      "last_checked": "2026-08-15 00:41:55",
       "online": true
     }
   ]
