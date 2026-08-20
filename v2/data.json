@@ -9,6 +9,11 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
+          "title": "https://booth.pm/zh-cn/items/8259372自购面捕插件。下载：https://forum.ripper.store/topic/129923/lars-%E3%83%A9",
+          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/2040",
+          "published": "2026-08-20 01:36"
+        },
+        {
           "title": "https://youtube.com/watch?v=ewZx0bnBb30",
           "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/2039",
           "published": "2026-08-18 13:12"
@@ -17,11 +22,6 @@
           "title": "Steam Manifest Grabber v1.8批处理支持断点续传；优化故障处理（RateLimit、登录凭据失效导致Unable to login to Steam3）",
           "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/2038",
           "published": "2026-08-17 01:44"
-        },
-        {
-          "title": "一个桌面端 Git 辅助工具，专门用来批量修改提交记录里的元数据——比如提交信息、作者名字邮箱、提交时间这些",
-          "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/196",
-          "published": "2026-08-16 18:59"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2026-08-20 00:21:19",
+      "last_checked": "2026-08-21 00:24:38",
       "online": true
     }
   ]
