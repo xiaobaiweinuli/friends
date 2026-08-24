@@ -9,6 +9,11 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
+          "title": "之前把频道文章整理到博客的时候顺手更新了几篇，没发到这里，现在发一下，以后的更新会在这里说的，不需要担心频道的性质改变，博客更多用于归档记录",
+          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/2046",
+          "published": "2026-08-24 01:45"
+        },
+        {
           "title": "前情提要：",
           "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/2045",
           "published": "2026-08-23 16:55"
@@ -17,11 +22,6 @@
           "title": "https://gemini.google/students/谷歌重新送了学生AI Pro套餐，现在分为2种情况，决定你是否可以一键重新领取。未收到重新验证通知，突然收回了套餐，可以一键领取；收到重新",
           "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/2044",
           "published": "2026-08-23 04:07"
-        },
-        {
-          "title": "去年：￥16000今年：￥25000电脑自己在升值",
-          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/2043",
-          "published": "2026-08-22 03:10"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2026-08-24 00:15:38",
+      "last_checked": "2026-08-25 00:25:55",
       "online": true
     }
   ]
