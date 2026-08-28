@@ -9,19 +9,19 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
-          "title": "之前把频道文章整理到博客的时候顺手更新了几篇，没发到这里，现在发一下，以后的更新会在这里说的，不需要担心频道的性质改变，博客更多用于归档记录",
-          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/2046",
-          "published": "2026-08-24 01:45"
+          "title": "硬件研发实录：7点全身追踪/眼追嘴追套装与掌上多光谱仪原型闭环（附完整 BOM 清单与 ESP32软件/PCB合伙人招募）深度解析两款已完成硬件原型验证与 Demo 跑通的自研极客硬件产品：低成本 7 点全身追踪+眼追嘴追一体化套装（含 100W 磁吸快充站与 ESP32-C6 基站）以及便携式 14 通道多光谱环境分析仪",
+          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/2050",
+          "published": "2026-08-28 05:31"
         },
         {
-          "title": "前情提要：",
-          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/2045",
-          "published": "2026-08-23 16:55"
+          "title": "顺便把这个放到仓库了，以后更新都在仓库，这里就不放日志了",
+          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/2049",
+          "published": "2026-08-27 23:31"
         },
         {
-          "title": "https://gemini.google/students/谷歌重新送了学生AI Pro套餐，现在分为2种情况，决定你是否可以一键重新领取。未收到重新验证通知，突然收回了套餐，可以一键领取；收到重新",
-          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/2044",
-          "published": "2026-08-23 04:07"
+          "title": "https://github.com/ZGQ-inc/buyer朋友问我玩并夕夕1年都买了些啥，就写了这个小工具，统计出来连我自己都难以置信。[*] 实际成交订单笔数: 596 笔[*] 实际消费总金",
+          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/2048",
+          "published": "2026-08-27 22:40"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2026-08-27 00:41:57",
+      "last_checked": "2026-08-28 08:42:07",
       "online": true
     }
   ]
