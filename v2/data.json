@@ -9,6 +9,11 @@
       "feed": "https://tg.xingshuang.xyz/rss.xml",
       "posts": [
         {
+          "title": "#Windows #程序 #网站",
+          "link": "https://tg.xingshuang.xyz/posts/NavCollect/78",
+          "published": "2026-09-02 22:29"
+        },
+        {
           "title": "oomikamimimiko - 大神みみこ (漫画+杂图精选合集) [Chinese]",
           "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/2051",
           "published": "2026-08-31 01:06"
@@ -17,11 +22,6 @@
           "title": "#cloudflare #API",
           "link": "https://tg.xingshuang.xyz/posts/xingshuang_blog/197",
           "published": "2026-08-30 18:15"
-        },
-        {
-          "title": "硬件研发实录：7点全身追踪/眼追嘴追套装与掌上多光谱仪原型闭环（附完整 BOM 清单与 ESP32软件/PCB合伙人招募）深度解析两款已完成硬件原型验证与 Demo 跑通的自研极客硬件产品：低成本 7 点全身追踪+眼追嘴追一体化套装（含 100W 磁吸快充站与 ESP32-C6 基站）以及便携式 14 通道多光谱环境分析仪",
-          "link": "https://tg.xingshuang.xyz/posts/CopyRightZGQInc/2050",
-          "published": "2026-08-28 05:31"
         }
       ],
       "issue_number": 6,
@@ -34,7 +34,7 @@
           "lightness": 55
         }
       ],
-      "last_checked": "2026-09-02 03:04:24",
+      "last_checked": "2026-09-03 03:07:35",
       "online": true
     }
   ]
